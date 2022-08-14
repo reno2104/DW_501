@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS */
+        /* width: 박스 가로길이, height: 세로길이. margin: 이동범위 */
+        .login_box{
+            margin: 200px auto;
+            width: 350px;
+            height: 200px;
+            background-color: #b9b6b6e7;
+        }
+        input{
+            width: 80%
+        }
+    </style>
+</head>
+<body>
+    <div class="login_box">
+        <h3>길동컴퍼니 로그인</h3>
+      <div>아이디 : <input type="text"></div>
+        <div>비밀번호 : <input type="password"></div>
+        <div><button>로그인</button></div>
+        <div><button>회원가입</button></div>
+        아이디/비밀번호 찾기
+        <div>이메일 : <input type="">@<input type="" list="mail">
+        <datalist id="mail">
+            <option value="naver.com"></option>
+            <option value="nate.com"></option>
+            <option value="hanmail.com"></option>
+            <option value="hotmail.com"></option>
+            <option value="daum.net"></option>
+            <option value="gmail.com"></option>
+            <option value="직접입력" type="text"></option>
+        </div>  
+        </datalist>
+    </div>
+</body>
+</html>

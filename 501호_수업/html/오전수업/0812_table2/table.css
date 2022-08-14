@@ -1,0 +1,17 @@
+table{
+    width: 200px;
+    height: 300px;
+}
+p {
+    font-size: 20px;
+    font-weight: 800;
+    background-color: bisque;
+    text-shadow: 5px 5px 5px gray;
+    width: 200px;
+}
+hr{
+    
+}
+table tr td {
+    border:1px solid #000000;
+}

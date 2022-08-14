@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0812-2(table)</title>
+<style> 
+    h2{ background:pink;  width:330px;
+        border:1px solid black;
+    }
+
+    table tr th{
+        border:1px solid red;
+        background:yellow;
+    }
+    .name{ 
+        background:lightgreen; 
+        font-weight:800;
+        width:100px;
+    }
+    table tr td{ 
+        border-right:1px solid black;  /* border:선굵기 선종류 선색;  */
+        border-bottom:1px solid black;
+        /* top - 위 , right - 오른쪽 , bottom - 아래 , left - 왼쪽*/
+        width:50px;
+
+    }
+
+    
+
+</style>
+
+</head>
+<body>
+    
+    <h2>DW고등학교 2학년4반 성적표</h2> 
+
+    <table>
+        <tr>
+            <th>학생이름</th>
+            <th>국어</th>
+            <th>수학</th>
+            <th>영어</th>
+        </tr>
+        <tr>  <!-- tr : 줄 -->
+            <td class="name">이성계</td> <!-- td : 칸 -->
+            <td>99</td>
+            <td>83</td>
+            <td>71</td>
+        </tr>
+        <tr>
+            <td class="name">김정호</td>
+            <td>87</td>
+            <td>67</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td class="name">문익점</td>
+            <td>81</td>
+            <td>54</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+</body>
+</html>

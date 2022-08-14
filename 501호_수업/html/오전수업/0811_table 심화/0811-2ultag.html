@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0811-2ultag</title>
+    <style>
+        /* style(css)의 주석 "ctrl + /" */
+        /* 선택자 - csss는 html에 효과를 적용하기 위한 언어.
+                    html에 여러개의 태그가 사용되므로 특정 태그만 선택하여
+                    효과를 적용하려면 선택자라는 것을 사용해야 한다. 
+                    
+                    *선택자의 종류 - 태그이름, id, class,(각 태그별 이름을 부여)
+                    // id - 현재 html 문서에서 고유한 이름이어야 한다. (중복불가)
+                    // class - id와 다르게 중복 가능. */
+
+
+        /* -id와 class 선택방법-
+                id는 id명 앞에 #을 붙인다.
+                class는 class 명 앞에 .을 붙인다.  */
+                #cafe{ 
+                   background: #FAECC5; 
+                }
+                /* 1. li태그 하위에 있는 모든 ul태그를 감추기
+                    2. 특정 li 태그에 마우스를 올려주면 해당 ul 태그 보이기 
+                 */
+                .drink_list>ul {
+                    opacity:0; height:0;
+        }
+        /* height는 높이를 조절하여 보이게 하는 기능. */
+        .drink_list:hover ul{
+            opacity:1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul id="cafe"> 
+        <li class="drink_list">Coffe</li>
+            <ul>
+                <li>아메리카노</li>
+                <li>카페라떼</li>
+                <li>카푸치노</li>
+            </ul>
+        <li class="drink_list">Tea</li>
+            <ul>
+                <li>카모마일</li>
+                <li>레몬</li>
+                <li>자스민</li>
+            </ul>
+        <li class="drink_list">Milk</li>
+            <ul>
+                <li>녹차라떼</li>
+                <li>고구마라떼</li>
+            </ul>
+
+    </ul>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <ul style="list-style-type: disc;"> <!-- 글자 앞 모양이 진한 동그라미-->
+        <li>Coffe</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type: square;"> <!-- 글자 앞 모양이 진한 네모 -->
+        <li>Coffe</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+</body>
+</html>

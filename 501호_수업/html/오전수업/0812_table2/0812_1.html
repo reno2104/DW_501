@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0812-2(table)</title>
+</head>
+<style>
+    h2{
+        background-color: #FF7EFD;
+        width: 350px;
+        border:1px solid #000000;
+ 
+        /* 글자 크기에 맞춰서 배경색의 길이를 조절한다. */
+    }
+
+    table tr th{
+        border:1px solid #FF0000;
+        background-color: antiquewhite;
+
+    }
+    table tr td {
+        border-right: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        width:50px;
+    }
+    .name {
+        background-color: #B7F0B1; font-weight: 800;
+        width:100px;
+    }
+    /* border: (순서) 선굵기 - 선종류 - 선 색 */
+    /* 위(top), 아래(bottom), 오른쪽(right), 왼쪽(left) 따로 선을 표현할 수 있다. */
+</style>
+
+<body>
+    
+    <h2>DW 고등학교 2학년 4반 성적표</h2>
+     
+        <table>
+
+            <thead>
+                <tr>
+                <th>학생이름</th>
+                    <th width="70">국어</th>
+                    <th width="70">수학</th>
+                    <th width="70">영어</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="name">이성계</td>
+                    <td>99</td>
+                    <td>83</td>
+                    <td>71</td>
+                </tr>
+                <tr>
+                    <td class="name">김유신</td>
+                    <td>89</td>
+                    <td>91</td>
+                    <td>74</td>
+                </tr>
+                <tr>
+                    <td class="name">김정호</td>
+                    <td>94</td>
+                    <td>91</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+
+        </table>
+</body>
+</html>
