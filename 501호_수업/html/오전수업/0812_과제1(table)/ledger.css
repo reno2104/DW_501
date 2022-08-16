@@ -1,0 +1,28 @@
+table{ 
+    width: 1000px;
+    height: 50px;
+    margin-left:auto; 
+    margin-right:auto;
+    border: 1px; border-color: black;
+    border-spacing: 1px;
+    border-collapse: collapse;
+}
+
+table tr td {
+width: 4000px;
+height: 50px;
+}
+#c {
+    font-size:30px; background-color: #FAF4C0;
+    width:400px;
+    margin-left:auto; 
+    margin-right:auto; 
+
+}
+#d {
+    font-size: 20px;
+}
+.top {
+    background-color: #6799FF;
+    color: white;
+}
