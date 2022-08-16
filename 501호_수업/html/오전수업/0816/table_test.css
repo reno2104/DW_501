@@ -1,0 +1,107 @@
+/* id가 one을 가진 태그의 하위태그인 td에 style적용 */
+#one td{
+    border:1px solid black; 
+    width: 100px;
+    height: 50px;   
+}
+#two td{
+    border:3px solid red;
+    width: 200px;
+    height: 80px;
+}
+#three td{
+    border:1px solid blue;
+    height: 30px;
+}
+
+/* :hover -> 마우스를 해당 위치에 올렸을 때 약속된 태그가 
+실행되는 태그*/
+#one:hover td{
+    border:3px solid green;
+}
+/* id가 one인 태그 위에 마우스가 올라오면 하위태그인 td의
+style을 적용.*/
+#two:hover {
+    background: pink;
+}
+/* id 뒤에 아무 것도 지정해주지 않으면 해당 id에 스타일 적용. */
+
+.color{
+    border:1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* 상위 클래스 적용은 맨 앞의 이름만 기재 -> 자녀격도 다 적용. */
+/* 그 다음 오는 이름을 각각 적용 시엔 다 따로 기입해야 한다. */
+
+.black{
+    background: black;
+    color: white;
+    /* 그냥 color는 해당 태그 내 font에 적용. */
+}
+.blue{
+    background: blue;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
+.yellow{
+    background: yellow;
+}
+.color_box td{
+    border:1px solid black;
+    width: 30px;
+    height: 30px;
+}
+.black:hover{
+    background: white;
+}
+/* .black위에 hover했을 때 밑의 "color_box" 항목들의 상태가
+변하게 되는 태그는 없다. 자신과 자식간의 영역만 가능하다.
+**javascript는 가능** */
+/* 때문에 하위 table이 해당 .black 항목 아래에 위치해야 있어야
+가능하다. */
+
+
+/* color_box의 각 칸마다 8가지 색상을 표현
+-- 실행순서 --  
+1. 각 칸에 지적할 색 이름 작성
+2. 각 칸에 마우스를 올려주면 배경색으로 작성된 색으로 변경
+*/
+
+
+.color_box td:hover{
+    background: yellow;
+    color: blue;
+}
+.blacks:hover{
+    background: black;
+}
+.reds:hover{
+    background: red;
+}
+.blues:hover{
+    background: blue;
+}
+.greens:hover{
+    background: green;
+}
+.yellows:hover{
+    background: yellow;
+}
+.purples:hover{
+    background: purple;
+}
+.grays:hover{
+    background: gray;
+}
+.golds:hover{
+    background: gold;
+}
+
+
