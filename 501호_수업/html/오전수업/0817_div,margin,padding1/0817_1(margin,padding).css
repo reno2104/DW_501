@@ -1,0 +1,61 @@
+#div1{
+    margin-top:50px;
+    margin-left: 100px;
+    border:1px solid black;
+    width:200px;
+}    
+#div2{    
+   /* margin 방향 설정 안하고 지정하고 싶을 때:
+    (시계방향 - 위, 오른, 아래, 왼쪽 순 - 으로 지정)
+    위쪽과 왼쪽에 대한 여백을 지정. */ 
+    margin:30px 0 0 50px;
+    border:1px solid black;
+}
+#div3{
+    border:1px solid black;
+    padding-top:50px;
+    padding-left: 100px;
+    width:200px;
+}
+#div4{
+    border:1px solid black;
+    margin-left:80px;
+    width:200px;
+}
+#div5{
+    border:1px solid black;
+    margin-top:45px;
+    margin-left:80px;
+    width:200px;
+}
+#div6{
+    border:1px solid black;
+    width:600px;
+    height:400px;
+}
+.d{
+    height:30px;
+    border:1px solid black;
+}
+.d1{
+    background: #FAF4C0;
+    margin-top: 20px;
+}
+.d2{
+    background: #FFD9FA;
+    height:auto;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+.d3{
+    background: #EAEAEA;
+    margin: 10px 10px 0 10px;
+    height:auto;
+    /* 높이값을 제대로 못맞추면 
+    다음 div부터 겹쳐보인다. */
+}
+.sub{
+    height:100px;
+    width:50px;
+    background: #8041D9;
+}

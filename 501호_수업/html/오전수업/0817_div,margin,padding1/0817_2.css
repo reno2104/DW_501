@@ -1,0 +1,46 @@
+.square1{
+    position: absolute;
+    /* 1. relative. 서로 다른 위치의 좌표를 기준 .
+    부모의 기준으로 자신의 위치가 정해진다. 
+    반응형 페이지에 강점이 있다.*/
+    /* 2. absolute.  위치상관없이 옆에 고정.(좌표 0)
+    반응형페이지를 만들때 에러사항이 있다. */
+    /*  3. (하단에 서술)*/
+    width:50px;
+    height:50px;
+    background: red;
+}
+/* .square2 , .square3 {} 함께 사용가능.
+같은 태그를 사용할 경우, 
+*/
+.square2 , .square3 {
+    width:150px;
+}
+
+.square2{
+    height: 50px;
+    background: yellow;
+    position:fixed;
+    /* 3. fixed. 현재화면기준.
+    스크롤을 따라다니는 기능. */
+
+    left:25px;
+    top:50px;
+    z-index:100;
+    /* 제일 앞으로 나오게 하고 싶을 때. z-index.
+    숫자의 크기가 클수록 앞으로 나오게 된다. */
+
+}
+.square3{
+    height:2000px;
+    background: green;
+    left:125px;
+    top:100px;  
+    margin-left:40px;
+}
+/* 바디 태그의 여백을 없애고 싶다면,
+꽉 채운 화면으로 만들수 있다.  */
+body{
+    margin:0;
+    padding:0;
+}
