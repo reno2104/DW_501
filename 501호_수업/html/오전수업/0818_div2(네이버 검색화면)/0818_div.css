@@ -1,0 +1,139 @@
+body, div, input, button{
+    margin:0;
+    padding:0;
+}
+
+#mask{
+    width:100%;
+    height:auto;
+    font-size:12pt;
+    color:black;
+}
+
+#search_wrap{
+    width:1000px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#menu_wrap{
+    width:100%;
+    height:50px;
+    margin-top:20px;
+    border-top: 2px solid #BDBDBD;
+    border-bottom: 2px solid #BDBDBD;
+}
+
+#wrap{
+    width:1000px;
+    height:auto;
+    /* margin이 위로 */
+    margin:0 auto;
+    margin-top:20px;
+    background: #FFB2F5;
+}
+
+.search_form{
+    width:100%;
+    height:50px;
+    padding: 20px 0 10px 0;
+    display: flex;
+    /* block(해당줄 라인 전체), 
+    inline(글씨크기만큼 너비가 바뀜), 
+    flex에 대한 설명은 아래에 있음.
+    */
+}
+
+.logo{
+    width:200px;
+    font-size:40px;
+    font-weight: 800;
+    color:#86E57F;
+    /* 아래에 있는 div항목을 옆으로 오게 하는 태그 */
+    /* float은 반응형 방식에 안맞는 옛방식. float:left;*/
+    /* flex: 옆으로 정렬. 반응형방식에 좋음.
+    display:flex;는 div 안의 항목들에 대한 width값을 적용시키면 자동정렬된다.*/
+
+}
+
+#search_world{
+    width:400px;
+    height:40px;
+    font-size: 25px;
+    border:0;
+}
+
+/* > 바로 밑에 있는 태그에 적용 */
+.search_bt>button{
+    height:40px;
+    width:100px;
+    font-size:25px;
+    background:#86E57F;
+    color:white;
+    border:0;
+}
+
+.search_bt>button:hover{
+    cursor:pointer;
+}
+
+.search{
+    display:flex;
+    border:2px solid #86E57F;
+    margin-top: 6px;
+    height:40px;
+}
+
+.menu_list{
+    width:1000px;
+    height:30px;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+#menu_ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    width:1000px;
+    height:30px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.menu_nav{
+    float: left;
+    display:inline; 
+    /* width:calc( 1000 / 10 * 1px );
+     계산 서식 calc( ) 적용.
+    이때, 사이사이마다 꼭 띄워줘야 한다. */
+    /* 혹은 계산서식 이외,
+    width:10% 적용해도 됨. */
+    height:30px;
+    line-height: 30px;
+    /* 가운데 수직 정렬 태그 */
+    color:#86E57F;
+    margin-right:20px;
+}
+
+.menu_nav:hover{
+    cursor: pointer;
+}
+
+#wrap{
+    display: flex;
+    background: #B2EBF4;
+}
+
+#contents {
+    width:700px;
+    height:800px;
+    background: #d1b2ff;
+}
+
+#sub {
+    width:280px;
+    height:800px;
+    margin-left:20px;
+    background: #faf4c0;
+}
