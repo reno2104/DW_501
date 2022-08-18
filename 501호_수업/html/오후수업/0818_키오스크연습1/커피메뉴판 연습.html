@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu_box{
+            width:400px;
+            height:500px;
+            margin:100px auto;
+            background: #BDBDBD;
+            padding:30px;
+        }
+        select{
+            width:100%;
+            height:40px;
+        }
+        h2{
+            text-align: center;
+        }
+        .radio1, .radio2 {
+            font-size:17px;
+            margin: 10px 0 0 0;
+        }
+        .number{
+            width: 100%;
+            height: 40px;
+            margin:10px 0 0 0;
+            text-align: right;
+        }
+        textarea{
+            width:100%;
+            height:200px;
+            margin:10px 0 0 0;
+
+        }
+        button{
+            margin:5px 0 0 1px;
+            width:100%;
+            height:50px;
+            background: blue;
+            font-size:15px;
+            color:white;
+            font-weight: 800;
+            border:0;
+            border-radius: 5px;
+        }
+        button:hover{
+            width:100%;
+            height:50px;
+            background: white;
+            font-size:15px;
+            color:blue;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.9s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu_box">
+        <h2>빽다방 메뉴</h2>
+        <div class="input_box">
+            <select>
+                <option value="">메뉴를 선택해주세요.</option>
+                <option value="">아메리카노</option>
+                <option value="">카푸치노</option>
+            </select>
+        </div>
+        <div class="radio1">
+            ICE : <input type="radio" name="type">
+            HOT : <input type="radio" name="type">
+        </div>
+        <div class="radio2">
+            L size: <input type="radio" name="size">
+            M size: <input type="radio" name="size">
+        </div>
+        <div>
+            <input class="number" type="number" placeholder="수량을 입력해주세요.">
+        </div>
+        <div>
+            <textarea placeholder="아무말이나 입력해주세요.."></textarea>
+        </div>
+        <div class="button">
+            <button>주문 하기</button>
+        </div>
+    </div>
+</body>
+</html>
