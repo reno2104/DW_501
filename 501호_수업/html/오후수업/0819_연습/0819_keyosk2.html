@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+
+        #board {
+            width:300px;
+            height: auto;
+            background: #fabb5d;
+            margin:50px auto;   
+            padding:50px;
+        }
+        
+        h2{
+            width: 90%;
+            height:auto;
+            background: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-left:10px;
+            font-size: 25px;
+
+        }
+        select{
+            width:100%;
+            height:40px;
+            text-align: center;
+            font-size:17px;
+            font-weight: 800;
+        }
+        .contact1, .contact2{
+            text-align: left, right;
+            padding-top:10px;
+            font-size:18px;
+            font-weight: 800;
+        }
+        
+        .number{
+            width:100%;
+            height:30px;
+            text-align: right;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .text{
+            width:100%;
+            height:200px;
+            font-size: 15px;
+        }
+        button{
+            margin-top:5px;
+            margin-left:3px;
+            width:100%;
+            height:40px;
+            background: rgb(57, 2, 255);
+            color: white;
+            font-size: 15px;
+            font-weight: 800;
+            border:0;
+            border-radius: 4px;
+        }
+        button:hover{
+            background: rgb(255, 255, 255);
+            color: blue;
+            font-size: 15px;
+            font-weight: 800;
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+    </style>
+<body>
+    <div id="board">
+        <h2>롯데리아 메뉴</h2>
+        <div class="select">
+            <select>
+                <option>메뉴를 선택해주세요.</option>
+                <option>새우버거</option>
+                <option>데리버거</option>
+                <option>불고기버거</option>
+            </select>
+        </div>
+        <div class="contact1">
+            단품<input type="radio" name="type">
+            세트<input type="radio" name="type">
+        </div>
+        <div class="contact2">
+            매장식사<input type="radio" name="call">
+            포장<input type="radio" name="call">
+        </div>
+        <div>
+            <input class="number" type="number" placeholder="수량을 입력해주세요.">
+        </div>
+        <div>
+            <textarea class="text" placeholder="추가사항이 있으면 적어주세요."></textarea>
+        </div>
+        <div class="done">
+            <button>주문 완료</button>
+        </div>
+    </div>
+    
+</body>
+</html>
