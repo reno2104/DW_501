@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* 세번째 줄의 너비부터 정하면
+다른 줄들도 맞춰진다. */
+/* 그 다음, 1,2,5번째 줄의 높이 값을 매긴다. */
+/* table 태그에 셀 간격 0으로 조정 */
+#table_wrap tr td{
+    border:1px solid black;
+}
+.top{
+    text-align: right;
+    padding-right: 10%;
+}
+/* ul 태그 혹은 테이블 1줄 6칸으로 
+두번째 줄 항목을 만든다. */
+/* 항시 제일 처음 table 크기 세팅을
+해놓아야한다. */
+#menu{
+    width:100%;
+    height: 60%;
+}
+#menu tr td{
+    border:0; 
+    width:16.6%;
+    height:60px;
+    text-align: center;
+    font-size: 15px;
+
+}
+#menu tr td:hover{
+    cursor: pointer;
+    color:#BDBDBD;
+    background: #999;
+    font-weight: 800;
+}
+
+#sub_menu{
+    padding:0;
+    margin:0;
+    list-style: none;
+    /* 앞에 목록표시 제거 */
+    width:150px;
+    height:120px;
+    background: rgb(0,100,204);
+    color:white;
+    font-size: 15pt;
+    text-align: center;
+}
+#sub_menu li{
+    height:30px;
+    line-height:30px;
+    /* 각 셀마다 가운데 정렬을 위함 */
+}
+#sub_menu li:hover{
+background:rgb(178,235,244);
+color:black;
+cursor: pointer;
+}
+
+.main_img{
+    width:550px;
+    height:350px;
+}
+.main_img:hover{
+    opacity: 0.4;
+}
+
+/* table 태그 이용 */
+#notice tr td {
+    border:0;
+}
+.notice_word{
+    font-size: 12pt;
+    height:30px;
+}
+#notice #notice_line td{
+    width:600px;
+    border-top:1px solid black;
+}
+#notice #notice_word .nt{
+    border:1px solid black;
+    width:100px;
+}
+#notice #notice_word .news{
+    width:100px;
+}
+
+#notice #notice_word:hover .news{
+    border:1px solid black;
+}
+#notice #notice_word:hover .nt{
+    border:0;
+}
+
+/* div 태그 이용 */
+.t{
+    display:inline-block;
+    width:100px;
+    position: absolute;
+}
+.t1{
+    border: 1px solid black;
+}
+.t2{
+    left:270px;
+}
+.t2:hover{
+    border:1px solid black;
+}
+.t2:hover ~ .t1{
+    border:0;
+}
+/* ~은 형제를 의미.
+인접한 형제는 2개만 가능.
+내 밑에 있는 형제. 자식 아님. */
+
+.content{
+    border-top:1px  solid black;
+    width:600px;
+    height:10px;
+}
+.title{
+    width:600px;
+    height:22px;
+}
