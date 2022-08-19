@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="memo" type="text">
+    <input id="name" type="text">
+    <input id="apple" type="text">
+    <button onclick="test()"> 확인</button>
+
+    <h3>숫자 입력 받기</h3>
+    <input id="num" type="number">
+    <button onclick="test02()">확인</button>
+
+    <h3>주문 수량받기</h3>
+    <input id="count" type="count">
+    <button onclick="count01()">주문</button>
+
+    <h3>메뉴 선택</h3>
+    <select id="menu">
+        <option value="아메리카노">아메리카노</option>
+        <option value="카푸치노">카푸치노</option>
+        <option value="카페라떼">카페라떼</option>
+        <option value="카라멜마끼야또">카라멜마끼야또</option>
+    </select>
+    <button onclick="menu01()">선택 완료</button>
+
+</body>
+<script>
+    // function 함수 혹은 메소드.
+    function test(){
+         var memo = document.getElementById("memo").value;
+//문제 1. id이름이 NAME인 input값을 alert()로 출력하시오.
+        var name = document.getElementById("name").value;
+        var apple = document.getElementById("apple").value;
+        alert(memo+','+name+','+apple);
+    }
+
+     // 2탄!
+    function test02(){
+        var num = document.getElementById("num").value;
+        //if 배우기.
+        if(num >= 10){
+            alert('10이상입니다.')
+        } 
+        else{   //if 반대.
+            alert('10미만입니다.')
+        }
+    }
+
+// 문제3. 주문 수량을 20개 이상 입력하면, "죄송합니다. 1인당 20개미만으로 주문 가능합니다."라는 문구 보여주기.
+    function count01(){
+        var count = document.getElementById("count").value;
+        if(count >= 20){
+            alert('죄송합니다. 1인당 20개미만으로 주문 가능합니다.')
+        }
+    }
+
+    //문제 4.
+    function menu01(){
+        var menu = document.getElementById("menu").value;
+
+            if(menu == '카푸치노'){
+            alert(menu+'는 품절입니다.')}
+        }
+        // '+' 문자와 문자를 합쳐준다. ==는 같다의 의미.
+
+        //문제 5. 선택한 메뉴가 카푸치노라면 "카푸치노는 품절입니다." alert 으로 출력하기!
+
+
+
+    
+
+
+</script>
+</html>
