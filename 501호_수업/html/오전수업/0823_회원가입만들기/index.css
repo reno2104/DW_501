@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 12pt;
+    font-family: '맑은고딕';
+}
+#join_mask{
+    width:100%;
+    height: auto;
+}
+#join_wrap{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#join_wrap fieldset{
+    border-radius: 10px;
+    padding:30px 20px 10px 20px;
+}
+.input_wrap{
+    width:660px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.title{
+    width:150px;
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 10px;
+}
+.join_input input{
+    width:300px;
+    height: 28px;
+    font-size: 13pt;
+    border: 2px solid #8C8C8C;
+    border-radius: 10px;
+}
+#name{
+    width: 150px;
+}
+.join_input select{
+    width:100px;
+    height: 28px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+hr{
+    border:2px solid#47C83E;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.add_wrap{
+ width:660px;
+ height: auto;
+ display: flex;
+ margin-bottom: 10px;   
+}
+#add_search{
+    cursor: pointer;
+}
+.add_item input{
+    height:28px;
+}
+#addr1 , #addr2{
+    width:500px;
+}
+.interest_item{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item_list{
+    width:33%;
+    font-size: 13pt;  
+}
+.item_list input[type=checkbox]{
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+}
+#join_bt{
+    width: 150px;
+    height: 37px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#join_bt a{
+    text-decoration: none;
+    background: #47C83E;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    color:white;
+    font-weight: 900;
+    border-radius: 10px;
+}

@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    font-family: '맑은고딕';
+}
+.login{
+    width:100%;
+    height: auto;
+}
+.start{
+    width:600px;
+    height: auto;
+    margin:0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.id input{
+    width:400px;
+    height:50px;
+    border:2px solid red;
+    border-radius: 10px;
+    font-size: 15pt;
+}
+.login_bt{
+    width: 400px;
+    height: 37px;
+    margin-left:665px;
+    margin-top: 30px;
+}
+.login_bt a{
+    text-decoration: none;
+    background: red;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    color:white;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.join_us{
+    margin-top:10px;
+    margin-left:1000px;
+    font-size: 15pt;
+    font-weight: 800;
+}
