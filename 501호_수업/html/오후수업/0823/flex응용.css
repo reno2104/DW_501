@@ -1,0 +1,79 @@
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:1000px;
+    height: 400px;
+    background: #ccc;
+    margin:120px auto;
+    display: flex;
+}
+.col{
+    height: 100%;
+    color: #fff;
+    padding: 25px;
+    /* flex:1 아이템의 크기를
+    컨테이너의 크기에 맞게
+    크기를 맞춰준다. */
+    flex:1;
+    position:relative;
+    transition: 0.7s;
+}
+.col:nth-child(1){
+    background: #283491;
+
+}
+.col:nth-child(2){
+    background: #F18684;
+    
+}.col:nth-child(3){
+    background: #6ee2f1;
+    
+}
+h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.caption{
+    width:230px;
+    font-size: 12px;
+    margin-top:28px;
+    /* none:강제로 안보이게 함. */
+    display: none;
+}
+.caption button{
+    border:1px solid #fff;
+    border-radius: 30px;
+    outline: none;
+    padding: 8px 18px;
+    color:#fff;
+    /* 배경색을 투명하게 */
+    background:transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.col img{
+    width:200px;
+    /* 자식이 부모를 벗어나지
+    않게 하는 방법
+    :부모태그를 기준으로
+    자식이 움직이게 함. */
+    position:absolute;
+    right:0;
+    bottom: 0;
+}
+.col:hover{
+    flex-grow: 2.5;
+}
+.col:hover .caption{
+    /* none으로 안보이게 했던 것을
+    보이게 함. */
+    display: block;
+}
+.col:hover h2{
+    text-align: left;
+}
