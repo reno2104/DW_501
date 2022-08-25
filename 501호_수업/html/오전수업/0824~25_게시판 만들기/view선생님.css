@@ -1,0 +1,87 @@
+/*  게시글 보기 부분 외곽 스타일 */
+#write_box{
+    width:100%;
+    height:auto;
+    margin-top:100px;
+}
+#write_wrap{
+    width:800px;
+    height:auto;
+    margin:0 auto;
+}
+
+/*  게시글 보기  */
+.write_form{
+    width:800px;
+    height:600px;
+    margin-top:50px;
+}
+.box{
+    display:flex;
+    width:800px;
+    height:40px;
+    line-height:40px;
+    margin-bottom:20px;
+}
+.box_title{
+    width:150px;
+    padding-right:15px;
+    text-align:right;
+    font-size:20px;
+}
+.box_input input{
+    height:20px;
+    width:300px;
+}
+.box_input textarea{
+    width:600px;
+    height:400px;
+    resize:none;
+}
+.content_box{
+    height:auto;
+}
+.wdate , .view_count{
+    display:flex;
+    width:400px;
+}
+.wdate input , .view_count input{
+    width:150px;
+}
+.view_count{
+    text-align:right;
+    margin-left:88px;
+}
+
+
+/*  버튼 부분 스타일 */
+.bt button{
+    width:150px;
+    height:40px;
+    background:black;
+    border-radius:15px;
+    color:white;
+    font-size:15pt;
+    font-weight:800;
+}
+.bt{
+    position:relative;
+    width:600px;
+    height:50px;
+    margin-left:165px;
+    margin-top:30px;
+    margin-bottom:50px;
+    display:flex;
+}
+.bt div{
+    width:33.3%;
+}
+.mod button{
+     position:absolute;
+     left:50%;
+     transform: translateX(-50%);
+}
+.del button{
+    position:absolute;
+    left:75%;
+}

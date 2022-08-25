@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 게시글 작성 부분
+외곽 스타일 */
+#write_box{
+    width: 100%;
+    height: auto;
+    margin-top:100px;
+}
+.write_wrap{
+    width: 800px;
+    height: auto;
+    margin:0 auto;
+    background: rgb(124, 207, 255);
+}
+
+/*  목록 이동 글씨 스타일 */
+.move_list{
+    width: 100px;
+    height: 40px;
+}
+
+/* 게시글 작성 폼 */
+.write_form{
+    width:775px;
+    height: 600px;
+    margin-top: 50px;
+    margin: 20px 0 20px 0;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.box{
+    display: flex;
+    width: 800px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.box_title{
+    width: 150px;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 20pt;
+}
+.box_input input{
+    height: 20px;
+    width: 300px;
+}
+.box_input textarea{
+    height:400px;
+    width: 600px;
+    resize: none;
+}
+.content_box{
+    height: auto;
+}
+#save_bt{
+    width: 150px;
+    height: 40px;
+    background: black;
+    border-radius: 15px;
+    color: white;
+    font-size: 15pt;
+    font-weight: 800;
+}
+.bt{
+    width: 155px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
