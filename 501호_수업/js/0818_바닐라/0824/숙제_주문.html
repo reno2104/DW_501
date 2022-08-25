@@ -75,25 +75,29 @@
         var selectedMenu = document.getElementById('menu').value;
         console.log(selectedMenu);
         if(selectedMenu == 'null'){
-            console.log('hello world');
+            console.log('hello world'); //문제 1번.
+            return false;
+        }           
+        if(selectedMenu == 'null'){
+            console.log('메뉴를 선택해주세요.'); //문제 6번.
+            return false;
         }
-    }
-    function order(){            
         var count = document.getElementById('count').value;
         console.log(count);
         if(count > '10'){
             console.log('죄송합니다. 1인 10잔 까지 주문 가능합니다.');
+            return false; // 문제 4번.
         }
         if(count == '0'){
-            console.log('수량을 입력해주세요!')
+            console.log('수량을 입력해주세요!');
+            return false; // 문제 5번.
         }
-    }
-    function order(){
+
         var selectedMenu = document.getElementById('menu').value;
         console.log(selectedMenu);
-
         if(selectedMenu == '품절'){
             console.log('죄송합니다. 해당 상품은 품절입니다.');
+            return false; // 문제 7번.
         }
     }
 
