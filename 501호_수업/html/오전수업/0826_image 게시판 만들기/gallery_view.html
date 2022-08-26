@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery_view</title>
+    <link rel="stylesheet" href="gallery_view.css">
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    // console.log(location.href);
+    // alert(location.href);
+    var url = location.href;
+    var params= url.split('?')[1];
+    params = params.split('&');
+    alert(params[0]);
+    //split : ''을 기준으로 분리. 나누기.
+    //[1] : ''을 기준으로 했을 때, 다음에 오는 첫명령어.
+    //params : 메인 타이틀에 대한 내용만 저장.
+    //params[0]은 기준으로부터 첫번째 것 실행한다는 의미.
+    
+    var img_name = params[0].split('=')[1]; //image6 나옴.
+    var img_type = params[1].split('=')[1]; //jpg 나옴.
+    var img_title = params[2].split('=')[1]; //이미지 이름(박지성축구센터 1)이 나옴.
+
+    img_title = decodeURI(img_title);
+
+    alert(img_name); // 이미지 파일 이름
+    alert(img_type); // 이미지 파일 확장자 이름
+    alert(img_title); // 갤러리 제목
+
+
+
+</script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="image_board.css">
+</head>
+<body>
+    <div id="image_mask">
+        <div id="image_wrap">
+            <div class="image_title">
+                <div class="title_wrap">
+                    <b>갤러리</b>
+                </div>
+            </div>
+            <div id="image_list">
+                <div class="list_wrap">
+                    <div class="cell cell_one">
+                        <div class="img_area" style="background: url(image6.jpg)     
+                        no-repeat center; background-size: cover;">
+                        <a href="gallary_view.html?name=image6&type=jpg&title=박지성축구센터 전시관1"></a>
+                        </div>
+                        <div class="title">
+                            <a href="gallary_view.html?name=image6&type=jpg&title=박지성축구센터 전시관1">박지성축구센터 전시관1</a>
+                        </div>
+                    </div>
+
+                    <div class="cell cell_two">
+                        <div class="img_area" style="background: url(image8.jpg)     
+                        no-repeat center; background-size: cover;">
+                        <a href="gallary_view.html?name=image8&type=jpg&title=박지성축구센터 전시관2"></a>
+                        </div>
+                        <div class="title">
+                            <a href="gallary_view.html?name=image8&type=jpg&title=박지성축구센터 전시관2">박지성축구센터 전시관2</a>
+                        </div>
+                    </div>
+
+                    <div class="cell cell_three">
+                        <div class="img_area" style="background: url(image10.jpg)     
+                        no-repeat center; background-size: cover;">
+                        </div>
+                        <div class="title">
+                            박지성축구센터 전시관3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list_wrap">
+                    <div class="cell cell_one">
+                        <div class="img_area" style="background: url(image11.jpg)     
+                        no-repeat center; background-size: cover;">
+                        </div>
+                        <div class="title">
+                            박지성축구센터 전시관4
+                        </div>
+                    </div>
+                    <div class="cell cell_two">
+                        <div class="img_area" style="background: url(image13.jpg)     
+                        no-repeat center; background-size: cover;">
+                        </div>
+                        <div class="title">
+                            박지성축구센터 전시관5
+                        </div>
+                    </div>
+                    <div class="cell cell_three">
+                        <div class="img_area" style="background: url(image14.jpg)     
+                        no-repeat center;background-size: cover;">
+                        </div>
+                        <div class="title">
+                            박지성축구센터 전시관6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이미지 효과 적용 예시 -->
+    <style>
+        .a{width: 400px; 
+            overflow: hidden;
+        }
+        .a img{width:400px;
+            transition: 0.5s;
+        }
+        .a:hover img{
+            transform: scale(1.4);
+        }
+    </style>
+    <div class="a">
+        <img src="image6.jpg">
+    </div>
+</body>
+</html>
