@@ -1,0 +1,46 @@
+body, div, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '맑은고딕';
+}
+#box{
+    border: 1px solid red;
+    width: 800px;
+    height: 400px;
+    margin-top: 50px;
+    top:50px;
+    left: 100px;
+}
+#box1{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: re;
+    top:80px;
+    left:200px;
+}
+#box2{
+    width: 300px;
+    height: 150px;
+    background: gray;
+    /* 부모태그 기준 */
+    position: relative;
+    left:10px;
+    top:50px;
+}
+#box3{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: relative;
+
+}
+#box4{
+    width: 100px;
+    height: 100px;
+    background: green;
+    /* 바디태그 기준 */
+    position: absolute;
+    top:10px;
+}

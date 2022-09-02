@@ -1,0 +1,58 @@
+body, div, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '맑은고딕';
+}
+#menu{
+    width: 1000px;
+    height: 80px;
+    position: relative;
+}
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#main_menu{
+    list-style: none;
+    width: 1000px;
+    height: 80px;
+    position: relative;
+
+}
+#main_menu>li{
+    width: 200px;
+    height: 80px;
+    float: left;
+    line-height: 88px;
+    text-align: center;
+    background: pink;
+    position: relative;
+
+}
+#main_menu.sub li{
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    top:-10px;
+}
+
+/* 서브메뉴 안보이게 하기 */
+#main_menu .sub{
+    display: none;
+}    
+/* 혹은 #main_menu .sub{ 
+    opacity: 0;
+}
+*/
+
+#main_menu:hover .sub{
+    height: 320px;
+    display: block;
+    background: lightgoldenrodyellow;
+    transition-property: height;
+    transition-duration: 2s;
+}

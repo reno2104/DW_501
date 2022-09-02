@@ -1,0 +1,325 @@
+body, div, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '맑은고딕';
+}
+
+/* 최상단 바 */
+#header_wrap{
+    width: 100%;
+    height: 40px;
+    background: #6A84B7;
+}
+#global_wrap{
+    width: 1000px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+/* 최상단 글씨 */
+#util{
+    /* float:정렬.
+    태그자체를 옮길때 씀.
+    text-align과 다름.*/
+    float: right;
+    width: 500px;
+    /* 점 없애기 */
+    list-style-type: none;
+    display: inline-block;
+/* 수직정렬 */
+    vertical-align: middle;
+}
+#util li{
+    /* 가로방향 정렬 */
+    float: left;
+    padding: 0 11px;
+    color: white;
+    font-size: 12px;
+    border-left: 1px solid #C4DEFF;
+}
+#util li:nth-child(1){
+    border: 0px;
+}
+.city{
+    color: yellow;
+}
+.site01{
+    color: greenyellow;
+}
+
+/* 상단 메뉴 */
+#logo_menu_wrap{
+    width: 100%;
+    height: 80px;
+    background: #223C6F;
+}
+#logo_menu{
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+}
+#logo{
+    width: 200px;
+    height: 80px;
+    font-size: 19px;
+    color: white;
+    font-weight: 800;
+    padding-top: 20px;
+}
+#logo img{
+    width: 40px;
+    height: 40px;
+}   
+#menu{
+    width: 800px;
+}
+#menu_list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    width: 800px;
+    height: 80px;
+}
+#menu_list li{
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    width: 133.3px;
+    text-align: center;
+}
+
+/* 서브메뉴 */
+#menu_list li ul{
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    position: relative;
+    list-style: none;
+}
+#menu_list li ul li{
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    top:-10px;
+}
+
+#menu_list li:hover ul{
+    position: relative;
+    opacity: 1;
+    background: #223c6f;
+    width: 133.3px;
+    top:10px;
+    z-index: 100;
+}
+#menu_list li:hover ul li{
+    position: relative;
+    width: 133.3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #223c6f;
+}
+
+/* 메인 이미지 */
+#main_img{
+    width: 100%;
+    height: 350px;
+    background: lightblue;
+}
+.m_image{
+    width: 1000px;
+    height: 350px;
+    margin: 0 auto;
+}
+.m_image img{
+    width: 1000px;
+    height: 350px;
+}
+
+/* 동물 공고란 */
+#post_wrap{
+    width: 1000px;
+    margin: 0 auto;
+    height: 800px;
+}
+#contents{
+    position: relative;
+    width: 100%;
+    height: 310px;
+}
+#contents h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.f_small{
+    font-size: 12px;
+}
+.r_small{
+    font-size: 12px;
+    float: right;
+}
+.animal_list{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+}
+.img_li{
+    width: 230px;
+    padding: 0 10px;
+    float: left;
+    display: block;
+}
+.img_li img{
+    width: 230px;
+}
+.img_li ul{
+    list-style: none;
+    width: 204px;
+}
+.img_li ul li{
+    padding-left: 7px;
+}
+.img_li ul li span{
+    font-weight: 700;
+}
+
+/* 공지사항, 입양후기 */
+#mid{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 175px;
+}
+.m_left{
+    width: 65%;
+    float: left;
+    margin-right: 5%;
+}
+.m_top{
+    padding-top: 10px;
+}
+.notice{
+    float: left;
+    width: 46%;
+}
+.m_top .notice:first-child{
+    margin-right: 8%;
+}
+.notice ul{
+    padding-left: 20px;
+}
+.notice ul li{
+    height: 25px;
+    font-size: 13px;
+}
+.m_right{
+    width: 30%;
+    float: left;
+}
+.conbanner{
+    border: 1px solid #dadee1;
+    box-sizing: border-box;
+    padding: 11px 15px;
+    height: 88px;
+}
+.conbanner h2{
+    margin:0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.conbanner p{
+    /* 기본글씨크기에서 88%로 줄인다. */
+    font-size: 88%;
+    line-height: 18px;
+}
+
+/* 하단부 운영시간, 프로세스 */
+#bottom{
+    height: 152px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+.time{
+    width: 322px;
+    float: left;
+    padding: 20px 0 20px 20px;
+/* 배경색에 이미지 넣는 방법 */
+    background: #efefef url(bg_tel.jpg) no-repeat right 0;
+    height: 152px;
+}
+.time h2{
+    font-size: 15px;
+    margin-top: 0;
+}
+.time dl{
+    font-size: 11px;
+    line-height: 18px;
+}
+.time dl dt{
+    float: left;
+    font-weight: 600;
+    padding-right: 8px;
+}
+.proce img{
+    width: 676px;
+    height: 152px;
+}
+
+/* foot */
+#footwrap{
+    background: #3d3d3d;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+#foot{
+    margin: 0 auto;
+    width: 1000px;
+    padding: 24px;
+    position: relative;
+}
+#foot ul{
+    list-style:none;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding: 0;
+    color: #f1f1f1;
+}
+#foot ul li{
+    float: left;
+    padding-right: 13px;
+    font-size: 14px;
+    margin-right: 13px;
+    border-right: 1px solid #6d6d6d;
+}
+/* 마지막에 있는 child
+last-child
+nth-child(4) */
+#foot ul li:last-child
+{border: none;
+}
+#foot address
+{
+    margin:3px 20px 2px 0;
+    color: #f1f1f1;
+    line-height: 20px;
+    font-size: 13px;
+    display: inline-block;
+    /* 주소 기울기 제거 */
+    font-style: normal;
+}
+.foot_logo{
+    position: absolute;
+    top:20px;
+    left:850px;
+}
