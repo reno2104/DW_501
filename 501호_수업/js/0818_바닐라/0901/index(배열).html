@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="start">
+        <input type="text">
+    </div>
+    <button onclick="banana()"> 제출 </button>
+</body>
+<script>
+    // 배열. - [] : 배열 -
+    var array = ['바나나', '딸기', '사과','수박'];
+
+    console.log('배열을 출력하겠습니다.');
+    console.log(array[0]); //바나나 출력부터
+    console.log(array[1]);
+    console.log(array[2]);
+    console.log(array[3]);
+    console.log('배열 길이는 : '+array.length);
+    // 배열은 for문하고 같이 사용한다.
+    //for문을 이용해서 배열 출력하기.
+
+    for(var i=0; i<array.length; i++){
+       var x = array[i]; // 대입도 가능하다.
+        console.log(x);
+    }
+    console.log('출력 종료');
+
+    //문제1. for문을 이용해서 배열 짝수 개수 구하기.
+    var array2 = [1,4,8,10];
+    var count = 0; //카운팅 하는 변수
+    for(var i=0; i<array2.length; i++){
+        var x = array2[i];
+        if(x%2 == 0){    
+            count++;
+        }
+    }
+    console.log('짝수 개수는 :'+count);
+
+</script>
+</html>

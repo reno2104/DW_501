@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="test" class="input-box">
+            <input type="text" placeholder="이름입력">
+            <input type="text" placeholder="연락처입력">
+            <input type="text" placeholder="이메일입력">
+            <input type="text" placeholder="주소입력">
+            <input type="text" placeholder="기타사항입력">
+        </div>
+        <button onclick="check()">제출</button>
+    </div>
+</body>
+<script>
+    //문제 1. 제출버튼을 눌렀을 때 input에 모두 입력이 되어있어야 한다.
+    //값을 임력하지 않고 제출을 누르면 값을 입력해주세요! alert창 띄우기.
+
+    function check(){
+        var x = document.getElementById('test').children;
+        for(var i=0; i<5; i++){
+            var inputValue.value = x[i];
+            if(inputValue.value == '')
+            alert('값을 입력해주세요~');
+            inputValue.focus();
+            return false;
+        }
+    }
+
+</script>
+</html>
