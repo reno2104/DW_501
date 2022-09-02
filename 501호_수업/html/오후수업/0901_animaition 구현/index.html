@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- logo -->
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <!-- 내용 -->
+            <div class="content">
+            <p>ThislastGeneration 사이트에 오신 것을 환영합니다.</p>
+            <h1>We're <span>Launching</span> Soon</h1>
+            <div class="time">
+                <div><p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            </div>
+        <!-- 에니메이션 이미지 -->
+        <img id="rocket" src="rocket.png">
+            
+</body>
+<script>
+    var endDay = new Date('February 06, 2023 00:00:00');
+    //2023년 2월 6일 날짜 가져오기
+    // setInterval : 무한으로 실행시켜주는 자바스크립트 함수
+    setInterval(function(){
+        var nowDay = new Date().getTime(); 
+        console.log(nowDay);// 현재 시각 불러오기 . 현재 시각을 숫자로 표현
+    var diff = endDay - nowDay; //미래시간(23년 2월 6일)과 현재 시간을 빼준다.
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24)); //Math.floor:소수점 버림.
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((diff % (1000 * 60)) / (1000));
+    // InnerHTML = days 해당 HTML에 값을 대입하겠다.
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+},1000);
+
+</script>
+</html>
