@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.accordianMenu{
+    font: 12px/20px 맑은고딕;
+    color: #424242;
+    background: #fff;
+    padding: 10px;
+    width: 500px;
+    margin: 0;
+}
+.accordianMenu h1{
+    margin: 0;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #aeaeae;
+}
+.accordianMenu h2{
+    margin: 5px 0;
+    padding: 0;
+}
+.accordianMenu h2 a{
+    font-size: 15px;
+    display: block;
+    font-weight: normal;
+    color: #424242;
+    text-shadow: 2px 2px 2px #aeaeae;
+    text-decoration: none;
+    background:-webkit-gradient(linear,left top, left bottom,from(#d4f4f4),to(#6799ff));
+    background: -moz-linear-gradient(top, #d4f4f4, #6799ff);
+    height: 50px;
+    line-height: 50px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    /* webkit : 크롬과 엣지.에서 동작
+    moz : 사파리, 파이어폭스.에서 동작 */
+}
+
+.accordianMenu :target h2 a, .accordianMenu h2 a:hover {
+    background:-webkit-gradient(linear,left top, left bottom,from(#6799ff),to(#d4f4f4));
+    background: -moz-linear-gradient(top, #6799ff,#d4f4f4 );    
+    font-weight: 800;
+}
+.accordianMenu p{
+    padding:0 10px;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.5s ease-in;
+    transition: height 0.5s ease-in;
+/* ease-in : 속도 효과. (처음)느리게(나중)점점빨라짐.
+    ease : (처음)빠르게(나중)점점 느리게. 
+    ease-out : (처음)빠르게(나중)느리게.
+    ease-in-out : (처음)점점빠르게(나중)점점느리게*/
+}
+.accordianMenu :target p{
+    height: 100px;
+    overflow: auto;
+}

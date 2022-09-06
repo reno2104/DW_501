@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '맑은고딕';
+}
+#gallery{
+    border: 10px solid #111111;
+    height: 300px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    background: #272229;
+    box-shadow: #272229 10px 10px 20px;
+}
+.small{
+    width: 120px;
+    height: 90px;
+}
+#gallery ul{
+    list-style: none;
+    margin-left: 30px;
+    padding: 0;
+}
+#gallery ul li{
+    display: inline-table;
+    padding: 5px;
+}
+.big{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+    border: 1px solid black;
+    box-shadow: #272229 2px 2px 2px;
+}
+
+#gallery ul li .small:hover{
+    cursor: pointer;
+}
+#gallery ul li:hover .big{
+    max-width:420px;
+    opacity: 1;
+    visibility: visible;
+    float: right;
+}
+
+/* 아이콘 스타일 적용 */
+
+/* 1. 텍스트 형식의 아이콘 */
+.bi-apple{
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 2px #efefef;
+}
+
+/* 2. 벡터(이미지) 형식의 아이콘
+애니메이션의 성격을 띄고 싶다면 추천*/
+.bi bi-youtube{
+    width: 100px;
+    height: 50px;
+    background: lightpink;
+}
