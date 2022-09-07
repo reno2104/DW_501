@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+       //문제. 국어, 수학, 영어, 역사 점수를 입력 받아서 총점과 평균 구하여 출력
+    // 출력 예시 ) 국어 : 88점, 수학 : 30점, 영어 : 90점, 역사 70점, 총점 :270점, 평균 67.5점
+
+    var kor = Number(prompt("국어 점수 입력 : "));
+    document.write("국어 : "+ kor +"<br>");
+
+    var math = Number(prompt("수학 점수 입력 : "));
+    document.write("수학 : "+ math +"<br>");
+
+    var eng = Number(prompt("영어 점수 입력 : "));
+    document.write("영어 : " + eng +"<br>");
+
+    var his = Number(prompt("역사 점수 입력 : "));
+    document.write("역사 : "+ his +"<br>");
+
+    var array = [kor, math, eng, his]
+    var answer = 0;
+    var sum =0;
+    for(var i=0; i<array.length; i++){
+        var x = array[i];
+        sum = sum +x;
+    }
+
+    document.write("총점은 : "+ sum +"<br>");
+    
+    answer = sum / array.length;
+   document.write("평균은 : " + answer); 
+
+
+</script>
+</html>
