@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //배열 for문
+
+    var array = [3, 10, 8];
+    //0번째 배열 출력
+    console.log(array[0]); //방법1
+    var af = array[0];
+    console.log(af); //방법2
+
+    var result = 0;
+    var item1 = array[1];
+    var item2 = array[2];
+    result = item1 + item2;
+
+    //for문을 이용해서 배열 안의 숫자를 모두 더하시오.
+    var sum = 0;
+    for(var i=0; i<array.length; i++){
+       // console.log(array[i]);
+        sum = sum + array[i];
+    }
+    console.log(sum);
+
+    //for문을 이용해서 array1에 2가 몇번 들어있는지 카운팅 하시오/
+    var array1=[2,3,9,20];
+    var count=0;
+    for(var i=0; i<array1.length; i++){
+        var x = array1[i];
+        if(x == 2){
+        count++;
+        } 
+    // 로직이 하나일때, 중괄호 생략가능.
+    }
+    console.log('2가 나오는 갯수는'+count);
+
+    //for문을 이용해서 array1에 있는 모든 숫자를 더하는데, 더한 숫하가 10이상이면 break거시오.
+    var sum=0;
+    for(var i=0; i<array1.length; i++){
+        sum = sum + array1[i];
+        if(sum >= 10){
+            console.log(+sum);
+            break;
+        }
+    }
+    //for문을 이용해서 array1에 있는 숫자 중 최대값을 구하시오.
+    var array2=[2,2,9,2,5];
+    var max=0;
+    for(var i=0; i<array2.length; i++){
+        var x = array2[i];
+        if(max < x){
+            max = x;
+            console.log("최대 값은"+max);
+        }
+    }
+
+    // for문을 이용해서 배열 안에 있는 숫자 확인하기.
+    console.log(array1[0]);
+    console.log(array1[1]);
+    console.log(array1[2]);
+    console.log(array1[3]);
+
+
+
+    // for문 응용.
+
+    //구구단 2~9단까지 만들기.
+    for(var i=2; i<=9; i++){ //outer for문
+        console.log('구구단을 시작합니다.'+i+'단부터 시작!');
+        for(var j=1; j<=9; j++){ //inner for문
+            
+            console.log(i+'*'+j+' = '+(i*j));
+        }
+    }   console.log(i+'단 종료');
+
+
+
+
+    //2단부터 5단까지 만들어보기
+    for(var i=2; i<=5; i++){
+        
+        for(var x=1; x<=5; x++){
+            console.log(i+'*'+x+'='+(i*x));
+        }
+    }   console.log(i+ '단 종료');
+
+
+    
+</script>
+</html>

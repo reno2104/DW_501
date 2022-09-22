@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var x = 20;  // x라는 이름을 가진 변수 생성.
+    x = 20; // x 라는 변수 재활용.
+
+    var x= 20; // 자바스크립트가 허용하는 문제점1.
+                // 원래는 변수 이름을 중복해서 선언할 수 없다.
+
+    let y1 = 10;
+    let y2 = 10; // 오류. 변수이름이 중복 생성. 때문에 이름 다르게.
+
+    // for문과 배열
+
+    // 1부터 30까지 출력
+
+    var i = [0];
+    for(i=0; i<=30; i++){
+        console.log(+i);
+    }
+
+    // 괄호 안의 수를 더하시오. (for문 없이)
+    var array = [5, 10];
+    var item0 = array[0];
+    var item1 = array[1];
+    var result = item0 + item1;
+
+    //for문을 이용해서 짝수만 출력
+    var array = [2,4,9,10];
+    for(i=0; i<array.length; i++){
+        var x = array[i];
+        if(x%2 == 0 ){
+            console.log('짝수는'+array[i]);
+        }
+    } 
+
+    
+</script>
+</html>

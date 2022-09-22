@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*문제 1) 배열 평균 구하기
+    정수를 담고 있는 배열 arr의 평균값을 구하시오.
+    */
+    var array = [1,2,3,4];
+    var answer0 = 0;
+
+    //배열 총합을 구한다.
+    var sum =0;
+    for(var i=0; i<array.length; i++){
+        var x = array[i];
+        sum = sum + x;
+    }
+    answer0 = sum / array.length;
+    console.log(answer0);
+    
+    /*
+    문제 2) 안녕안녕안녕?
+    길이가 n이고, "안녕안녕안녕...."와 같은 패턴을 유지하는 문자열을 출력할 수 있게 로직을 완성하세요. 
+    예를들어 n이 4이면 "안녕안녕"을 출력하고 3이라면 "안녕안"를 리턴하면 됩니다.
+    */
+    var n = 4;
+    var answer1 = "";
+    var an = "안";
+    var nyeong = "녕";
+    
+    for(var i=0; i<n; i++){
+        if(i%2 == 0){
+            answer1 = answer1 + an;
+        }
+        if(i%2 != 0){
+            answer1 = answer1 + nyeong;
+        }
+    }    
+    console.log(answer1);
+        
+    /*
+    문제 3) 없는 숫자 더하기
+    0부터 9까지의 숫자 중 일부가 들어있는 정수 배열 numbers가 있습니다.
+    numbers에서 찾을 수 없는 0부터 9까지의 숫자를 모두 찾아 더한 수를 출력하시오.
+    */
+    var numbers = [1,2,3,4,6,7,8,0]; //5, 9가 numbers에 없으므로, 5 + 9 = 14가 정답입니다.
+    var answer2 = 0;
+    var sum=0;
+    var x = 45;
+    for(var i=0; i<numbers.length; i++){
+        sum = sum+numbers[i];
+    }
+    answer2 = x-sum;
+    console.log(answer2);
+
+    
+</script>
+</html>
