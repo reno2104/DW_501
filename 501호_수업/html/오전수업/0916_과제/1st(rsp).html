@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+       <div class="high"></div>
+       <div class="center">
+            <div class="main_text"><h1>가위바위보</h1></div>
+            <div class="com_img">
+                <div class="coms_img">
+                     <img src="../0916_과제/1.png" id="com_img" class="com_i" onload=com()>
+                     <div class="com_text"><h3>COM</h3></div>
+                </div>
+                <div class="result" id="result"> 결과</div>
+                <div class="user_res" id="user_res">유저선택란</div>
+            </div>
+            <div class="text"><h3>vs.</h3></div>
+            <div class="user_area">
+                <div class="case1" id="user1" onclick=result()>
+                    <img src="1.png" class="user 1img">
+                </div>
+                <div class="case1" id="user2" onclick=result()>
+                    <img src="2.png" class="user 2img">
+                </div>
+                <div class="case1" id="user3" onclick=result()>
+                    <img src="3.png" class="user 3img">
+                </div>
+            </div>
+       </div>
+       <div class="question">
+        <h3>.되지 않는 부분.</h3>
+        <ul class="ques">
+            <li class="ques_mark">유저 이미지를 클릭하면 유저선택div에 선택한 이미지가 나오게 하는 방법</li>
+            <li class="ques_mark">or 유저 이미지 선택시 컴퓨터 이미지가 자동으로 멈추며, 멈춘 이미지와의 서로의 대결 결과를 결과div에 나오게 하는 방법</li>
+        </ul>
+       </div>
+       <div class="footer"></div>
+    </div>
+</body>
+<script>
+/*
+    var button = document.querySelector(".user");
+    var handArr = ['가위','바위','보'];
+    var cis = src'1.png';
+
+    button.addEventListener("click", function(){
+        var num = Math.round(Math.random() * (handArr.length-1));
+
+*/
+
+    // 컴퓨터 이미지 돌아가게 하기
+    var idx=1;
+
+    window.onload=function com(){
+        set = setInterval(function(){
+            idx++;
+            if(idx==4){
+            idx=1;
+        }
+        var img = document.getElementById('com_img');
+        img.src = "../0916_과제/" + idx + '.png';
+        }, 300);
+    }
+
+    //유저가 이미지를 선택하면 컴퓨터 이미지도 멈추게 하기
+
+    if(function result()){
+        clearInterval(set);
+    }
+
+    // 유저가 선택한 이미지를 다른div에 나타내기
+    function result(){ 
+        if(onclick()){
+        (document.getElementById("user1").src="1.png") ||
+        (document.getElementById("user2").src="2.png") ||
+        (document.getElementById("user3").src="3.png") }
+    }
+    div.innerHTML('#user_res');
+
+
+    //나타낸 이미지값을 가지고 컴퓨터 랜덤 이미지와 비교하기
+
+
+    // 대결 결과
+    while(){
+        var k=Math.floor(Math.random()*4)+1;
+    
+    if(user == com){
+        document.write("비겼다.");   
+    }
+    else if((user==1 && com==3) || (user==2 && com==1)|| (user==3 && com==2))
+{
+    document.write("내가 이겼다.");
+}
+    else{
+    document.write("내가 졌다.");
+}
+        div.innerHTML(".result");
+
+    }
+
+    
+
+/*
+    cis = document.getElementsById(user1);
+    rock = document.getElementsById(user2);
+    bo = document.getElementsById(user3);
+    while(true){
+        for(i=0; i<4; i++){
+
+        }
+    }
+*/
+
+
+
+</script>
+</html>

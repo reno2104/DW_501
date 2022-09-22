@@ -1,0 +1,79 @@
+body{
+    font-family: '맑은고딕';
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:1700px;
+    height: auto;
+}
+.high{
+    width:auto;
+    height: 50px;
+}
+.center{
+    width:auto;
+    height: auto;
+    margin: 0;
+}
+.main_text{
+    margin: 0 auto;
+}
+.main_text h1{
+    text-align: center;
+}
+.com_img{
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#com_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+}
+.coms_img{
+    position: relative;
+}
+.com_text{
+    position: absolute;
+}
+.com_text h3{
+    position: absolute;
+    margin: 0;
+    float: right;
+}
+.result , .user_res{
+    width:250px;
+    height: 250px;
+    background: #EAEAEA;
+}
+
+.text{
+    margin: 0 auto;
+    width: 50px;
+}
+.text h3{
+    text-align: center;
+}
+.user_area{
+    margin: 0 auto;
+    width:800px;
+    display: flex;
+    justify-content: space-between
+}
+.case1{
+    margin: 0 auto;
+}
+.case1 img{
+    width: 200px;
+    height: 200px;
+}
+.case1 img:hover{
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: '맑은고딕';
+        }
+        #info input{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <input type="text" id="name" placeholder="이름">
+        <input type="text" id="job" placeholder="직업">
+        <input type="text" id="age" placeholder="나이">
+        <input type="button" onclick="enroll()" value="등록">
+    </div>
+    <div id = "result"></div>
+</body>
+<script>
+    //직업이 군인 또는 변호사만 출력하기.
+    function enroll(){
+    var name = document.getElementById("name");
+    var job = document.getElementById("job");
+    var age = document.getElementById("age");
+    var res = document.getElementById("result");
+    if(job.value=="군인" || job.value=="변호사"){
+        res.innerHTML = 
+        '이름 : ' + name.value + '직업 : ' + job.value + '나이 : '+age.value;
+    }
+}
+// 직업이 공무원인 사람만 나이 대신 출생년도로 출력하기.
+function enroll(){
+    var name = document.getElementById("name");
+    var job = document.getElementById("job");
+    var age = document.getElementById("age");
+    var res = document.getElementById("result");
+    if(job.value=="공무원" || job.value=="군인" || job.value=="변호사"){
+        var age_year=job.value;
+        var title='나이 : ';
+        if(job.value =="공무원"){
+            age_year = 2022 - parseInt(age.value)+1;
+            title = ' 출생년도 : ';
+        }
+        res.innerHTML = 
+        '이름 : ' + name.value + '직업 : ' + job.value + +title + age_year;
+    }
+}
+</script>
+</html>

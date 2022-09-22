@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        body img{
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../../오전수업/image/1.jpg" id="mimg" >
+    <div>
+        <button onclick="start()">시작</button>
+        <button onclick="end()">종료</button>
+        <button onclick="pre()">이전</button>
+        <button onclick="next()">다음</button>
+    </div>
+</body>
+<script>
+    var idx=1;
+
+    function next(){
+        idx++; // 4번째 이미지까지 다 보여주겠다.
+        if(idx==5){
+            idx=1; // 처음으로 돌아가라.
+        }
+        var img = document.getElementById("mimg");
+        img.src ="../../오전수업/image/" + idx + '.jpg';
+    }
+    function pre(){
+        idx--; // 점점 줄여라.
+        if(idx==0){
+            idx=4; // 마지막으로 돌아가라.
+        }
+        var img = document.getElementById("mimg");
+        img.src ="../../오전수업/image/" + idx + '.jpg';
+    }
+
+
+    var set = '';
+
+    // 자동 진행 시작.
+    function start(){
+        set = setInterval(function(){
+        idx++;
+        if(idx==5){
+            idx=1;
+    }
+    var img=document.getElementById('mimg');
+        img.src ='../../오전수업/image/' + idx + '.jpg';
+    }, 1000);
+
+        // while 반복(무한)이기때문에 여기서 쓰는 것은 적철치 않다.
+    }
+
+    //멈추게 하기.
+    function end(){
+        clearInterval(set);
+    }
+</script>
+</html>

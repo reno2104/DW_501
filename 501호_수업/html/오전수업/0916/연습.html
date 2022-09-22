@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var hands = Math.floor(Math.random()*3)+1;
+
+    switch(game){
+        case 1: document.write('가위');
+                break;
+        case 2: document.write('바위');
+                break;
+        case 3: document.write('보');
+                break;
+    }
+
+    var user = parseInt(prompt('1.가위 2.바위 3. 보'));
+        var com =0;
+        var game = Math.floor(Math.random()*3)+1;
+
+        switch(user-com){
+            case -2:
+            case 1:
+                document.write("나의 승");
+                break;
+            case 2:
+            case 1:
+                document.write("나의 패배");
+                break;
+            case 0:
+                document.write("비김");
+                break;
+        }
+
+        
+</script>
+</html>

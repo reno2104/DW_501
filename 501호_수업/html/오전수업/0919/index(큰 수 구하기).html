@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: '맑은고딕';
+        }
+        #input_wrap{
+            display: flex;
+            flex-direction: column;
+            width:300px;
+        }
+        #input_wrap input{
+            height: 40px;
+            font-size: 1.7rem; 
+            /* rem : font size 기준으로 크기가 적용. 1.7배 적용. */
+            cursor: pointer;
+        }
+        /* #number2{order:3;}
+        #number1{order:2;}
+        input[type='button']{
+        }
+         : 위치바꾸기.*/
+    </style>
+</head>
+<body>
+    <div id="input_wrap">
+        <input type="text" id="number1" placeholder="정수입력">
+        <input type="text" id="number2" placeholder="정수입력">
+        <input type="button" onclick="execute()" value="입력">
+    </div>
+    <hr />
+    <div id="result"></div>
+</body>
+<script>
+    // 두개의 숫자를 입력받아 두 숫자 중 큰 숫자를 출력하시오.
+
+        function execute(){
+    var num1 = document.getElementById('number1');
+     var num2 = document.getElementById('number2');
+    var res = document.getElementById('result');
+
+     if(parseInt(num1.value) > parseInt(num2.value)){
+        res.innerHTML = '<h2> 큰숫자: ' + num1.value + '</h2>';
+     }
+     else{
+        res.innerHTML = '<h2> 큰숫자: ' + num2.value + '</h2>';
+     }
+    }
+
+
+
+
+//  직접 풀어본것.
+    // function execute(){
+        // var num1 = document.getElementById('number1');
+        // var num2 = document.getElementById('number2');
+        // var val1 = parseInt(num1.value);
+        // var val2 = parseInt(num2.value);
+// 
+        // var res = document.getElementById('result');
+        // if(val1 == val2){
+            // res.innerText = "비겼다";
+            // document.getElementById("result");
+        // }
+        // else if(val1 < val2){
+            // res.innerText = "2번 승";
+            // document.getElementById("result");
+        // }
+        // else{
+            // res.innerText = "1번 승";
+            // document.getElementById("result");
+        // }
+        // 
+// }
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 반복문 사용
+    
+    //1~100까지 숫자 중 13의 배수만 출력
+    // document.write() 사용.
+
+/*
+    var i=1;
+    while(i<=100){
+    if(i% 13 == 0){
+        document.write(i+'<br>');
+        i++;
+    }}
+*/
+
+
+    // 1~100까지 숫자중 4와 7의 공배수만 출력
+
+/*
+    var i=1;
+    while(i<=100){
+        if(i%4 == 0 && i%7 == 0){
+            document.write(i+ '<br>');
+            i++;
+        }}
+*/
+
+        // 1~100까지 숫자중 24의 약수 출력
+
+/*
+        var i=24;
+        while(i>=1){
+            if(24%i==0){
+                document.write(i+'<br>');
+                i--;
+            }}
+
+     // or 1부터 나오게 하기   
+        var k=1;
+        while(k<=24){
+            if(24%k==0){document.write(i+'<br>')
+        i--;
+    }}
+*/
+
+    // 124와 96의 공약수 출력하기 
+
+/*
+    var num1 = 124 , num2=96;
+    var i=1;
+    var small = num1 < num2 ? num1 : num2;
+    while(i<=small){
+        if(num1 % i == 0 && num2 % i == 0){
+            document.write(i+'<br>');
+            i++;
+        }}
+*/
+
+    // 124와 155의 최대공약수 출력
+
+    var num1 = 124 , num2=155;
+    var i = num1 < num2 ? num1 : num2;
+    while(i>=1){
+        if(num1 % i == 0 && num2 % i == 0){
+            document.write('최대공약수 : '+i);
+            break;   
+        }i--;}
+</script>
+</html>

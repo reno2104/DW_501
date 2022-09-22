@@ -1,0 +1,56 @@
+.body{
+    width:1000px;
+    margin: 0;
+}
+.row{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+.com_area , .user_area{
+    width:800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.com , .user {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0px 0px 3px rgba(73, 57, 0, .8);
+}
+.h2Text{
+    float: left;
+}
+hr{
+    margin: 0 auto;
+    margin-top: 20px;
+    width:800px;
+}
+
+.ball1 {
+    background: #FFA7A7;
+}
+.ball2 {
+    background: #FFC19E;
+}
+.ball3 {
+    background: #FFE08C;
+}
+.ball4 {
+    background: #CEF279;
+}
+.ball5 {
+    background: #B2CCFF;
+}
+.ball6 {
+    background: #D1B2FF;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>로또 번호 추첨!</h1>
+    <script>
+
+    //컴복권
+        var comlotto = [];
+        while (comlotto.length < 6) {
+            var num = parseInt(Math.random() * 45 + 1);
+            if (comlotto.indexOf(num) == -1) {
+                comlotto.push(num);
+            }
+        }
+        comlotto.sort((a,b)=>a-b);
+        document.write("<div class='com_area'>");
+        document.write("<h2 class='h2Text'>COM Lotto</h2>");
+        document.write("<div class='row'>");
+        document.write("<div class='com ball1'>" + comlotto[0] + "</div>");
+        document.write("<div class='com ball2'>" + comlotto[1] + "</div>");
+        document.write("<div class='com ball3'>" + comlotto[2] + "</div>");
+        document.write("<div class='com ball4'>" + comlotto[3] + "</div>");
+        document.write("<div class='com ball5'>" + comlotto[4] + "</div>");
+        document.write("<div class='com ball6'>" + comlotto[5] + "</div>");
+        document.write("</div>");
+        document.write("<hr>");
+        document.write("</div>");
+        
+        //유저 복권
+        var userlotto = [];
+        while (userlotto.length < 6) {
+            var num = parseInt(Math.random() * 45 + 1);
+            if (userlotto.indexOf(num) == -1) {
+                userlotto.push(num);
+            }
+        }
+        userlotto.sort((a,b)=>a-b);
+        document.write("<div class='user_area'>");
+        document.write("<h2 class='h2Text'>USER Lotto</h2>");
+        document.write("<div class='row'>");
+        document.write("<div class='user ball1'>" + userlotto[0] + "</div>");
+        document.write("<div class='user ball2'>" + userlotto[1] + "</div>");
+        document.write("<div class='user ball3'>" + userlotto[2] + "</div>");
+        document.write("<div class='user ball4'>" + userlotto[3] + "</div>");
+        document.write("<div class='user ball5'>" + userlotto[4] + "</div>");
+        document.write("<div class='user ball6'>" + userlotto[5] + "</div>");
+        document.write("</div>");
+        document.write("<hr>");
+        document.write("</div>");
+        document.write("<br><br><h2 class='ques'>안되는부분</h2>");
+        document.write("<br><br><ul><il>com값과 user값의 비교 + 아래출력, 등수 매기기</il>");
+
+
+            // 당첨비교
+    /*
+            var pickCnt=0;
+            var pickRankMsg =0;
+            var j = userlotto[];
+            var k = comlotto[];
+
+        for(var j=0; j < 7; j++){
+            for(var k=0; k <6; k++){
+                if(userlotto[j] == comlotto[k]){
+                    if(j == 6){
+                        bonusFlag = true;
+                    }
+                    else{
+                        pickCnt++;
+                    }
+                }
+            }
+        }
+        if(pickCnt == 6){
+            pickRankMsg  = "1등";
+        }
+        else if(pickCnt == 5){
+            if(bonusFlag){
+                pickRankMsg  = "2등";
+            }
+            else{
+                pickRankMsg  = "3등";
+            }
+        }
+        else if(pickCnt == 4){
+            pickRankMsg  = "4등";
+        }
+        else if(pickCnt == 3){
+            pickRankMsg  = "5등";
+        }
+        else{
+            pickRankMsg  = "꽝";
+        }
+
+        document.write("<div class=result>"+"<div>");
+    */
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name = "num" id="num">
+    <button type="button" onclick="data_push()">입력</button>
+    <hr />
+    <div id="result">
+        
+    </div>
+</body>
+<script>
+
+    // html 문서를 말하는 엘리먼트.
+
+    //getElement에서 쓰는 기능. (id 제외 복수s붙여야 함.)
+// 1.    document.getElementById("num"); // id 가져올때.
+// 2.    document.getElementsByClassName("class명"); // class 명 가져올때.
+// 3.    document.getElementsByName("name명"); // name 값 가져올때.
+// 4.    document.getElementsByTagName("태그명"); // 태그 이름 가져올때.
+
+
+//    function data_push(){
+//        var number = document.getElementById("num");
+//        var val = number.value;
+//
+//        var res = document.getElementById("result");
+//        res.innerHTML = val; // 해당 태그 안에 html 형식을 넣겠다. 
+//    }
+
+
+//    document.querySelector("#num"); // id  
+//    document.querySelector(".클래스"); // class. 이름이 하나만 있는 클래스인 경우.
+//    document.querySelectorAll(".클래스"); // class. 여러개.
+//    document.querySelectorAll("태그명"); // 태그이름.
+//    document.querySelectorAll("[name]명"); // name.
+
+
+
+// 문제 1. 입력값이 짝수인지 홀수인지 출력하시요.
+
+    function data_push() {
+        //input태그 가져오기.
+        var number = document.getElementById('num');
+        var val = parseInt(number.value); // input 태그에 입력값 가져오기. 
+        
+        //id가 result인 div 태그 가져오기.
+        var res = document.getElementById('result');
+        if(val%2 == 0)
+            res.innerHTML = "짝수다"; //div 안에 값 넣어주기.
+        
+        else
+        res.innerHTML = "홀수다"; // 참, 거짓 문항이 1개밖에 안되면 중괄호 제외해도 된다.
+    }
+
+</script>
+</html>

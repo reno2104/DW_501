@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button onclick="result">출력하기</button>
+    <hr/>
+    <div id="result"></div>
+
+    <hr>
+    <input type="button" value="앞면" onclick="select_coin('front')">
+    <input type="button" value="뒷면" onclick="select_coin('back')">
+    <hr/>
+    <div id="result1"></div>
+
+</body>
+<script>
+    //루프문(반복문)
+    // for, while, do~while
+    // while - for
+
+    //    초기값,          조건식,           증감식
+    //    시작숫자,     마지막 숫자,
+    //    시작숫자부터 마지막숫자까지 얼마만큼 증가 또는 감소
+
+    // 5일때는 참, 6일때는 거짓 조건문 만들기.
+//    var i=1;
+//    while(i<6){
+//        document.write('반복 <br>');
+//    }
+
+    // 2~9 중에 하나를 입력받아 해당숫자 구구단이 출력되게 만들기
+    // 입력은 input 태그를 통해 입력받기
+    // 출력은 div에 하기.
+
+    // function result(){
+    // var num = document.getElementById("num");
+    // var res = document.getElementById("result");
+// 
+    // var out ='';
+    // var g=i;
+    // while(g <=9){
+        // out +=num.value+'*'+ g + ' = ' + num.value + g + '<br>');
+        // g++;
+    // }
+    // res.innerHTML = out;
+// }
+
+
+        // 숫자 하나 입력받기
+        // 입력받은 숫자만큼 반복하기
+
+//        function result(){
+//        var num = document.getElementById("num");
+//        var res = document.getElementById("result");
+//        
+//        var i = 1;
+//        var out ='';
+//        
+//        while(i <= num.value){
+//                out += '반복 <br>';
+//                i++;        }
+//            res.innerHTML = out;
+//    }
+
+   // function select_coin(it){ // it : 매개변수
+        var coin = Math.floor(Math.random()*10)+1;
+        var res = document.querySelector("#result1");
+
+//        alert(coin);
+//        if(coin%2 == 0&& it=="front")
+//             res.innerHTML = "앞면, 정답";
+//        else if (coin%2 ==1 && it=="back")
+//                res.innerHTML = '뒷면, 정답';
+//        else
+//                res.innerHTML = '오답~ 다음에 다시';
+
+
+//while(i=10){
+     // switch (coin%2){
+         // case 0 : 
+             // switch(it){
+                 // case 'front':
+                     // out+='앞면, 정답 <br>';
+                     // break;
+                 // case 'back':
+                     // out+='앞면, 오답 <br>';
+                     // break;
+             // }
+             // break;
+         // case 1 : 
+             // switch(it){
+                 // case 'front':
+                     // out+='뒷면, 정답 <br>';
+                     // break;
+                 // case 'back':
+                     // out+='뒷면, 오답 <br>';
+                     // break;
+             // }
+             // break;
+         // default:
+             // 
+     // }
+ // }
+// i++;
+//}
+
+
+// 무한루프 : 무한대 반복
+    
+/*
+    var k=1;
+
+    while(true){
+        document.write("무한반복");
+        if(k == 100) break;
+        k++;
+    }
+*/
+
+/*    while(true){
+        var num = parseInt(prompt());
+        document.write(num+'<br>');
+        if(num == 0) break;
+    } */
+
+
+    // 자바스크립트로 테이블 만들기.
+    var res = document.getElementById("result1");
+
+    var i=1;
+    out += "<table>";
+    while(i<=4){
+        out += "<tr> <td> 1</td><td> 2</td> </tr>" // tr이 4개 만들어짐.
+        i++;
+
+    }
+    out += "</table>";
+    
+    res.innerHTML = out;
+
+    <style>
+        table tr td{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        </style>
+
+
+
+        // table 4줄 4칸 만들기 (중첩 반복문)
+
+/*
+        var i=1;
+    out += "<table>";
+    while(i<=4){
+        out += "<tr>";
+            var k=1;
+            while(k <=5){
+                out += '<td> a </td>';;
+                k++;
+            }
+    out += "</tr>";
+    }
+    out += "</table>";
+    res.innerHTML = out;
+*/
+
+
+    // input 값으로 테이블 만들기.
+ /*   
+    var res = document.getElementById('result1');
+    var row = document.getElementById('row');
+    var col = document.getElementById('col');
+
+    var out = '';
+    var i = 1;
+    out += '<table>';
+    while (i <= row.value);{
+    out += '<tr>';
+    var k=1;
+    while (i <= col.value);{
+    out += '<td> a </td>';
+    k++;
+    }
+    out += '</tr>';
+    i++;
+}
+out += '</table>';
+
+res.innerHTML = out;
+*/
+    
+
+</script>
+</html>
