@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: '맑은고딕';
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1600px;
+    height: auto;
+    margin: 0 auto;
+}
+.floor{
+    margin: 0 auto;
+    width: auto;
+    height: 70px;
+}
+.text{
+    margin: 0 auto;
+    width: 400px;
+}
+.text h3{
+    text-align: center;
+    font-family: 700;
+}
+
+.center{
+    width: 1600px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.box{
+    position: relative;
+    width: 20%;
+    height: 600px;
+    margin: 0 auto;
+    background: black;
+    border-radius: 30px;
+}
+.blackbox{
+    width: 300px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.textbox{
+    margin: 5px;
+    text-align: center;
+}
+.textBox h4{
+    font-size: 17pt;
+    color: #fff;
+    text-align: center;
+
+}
+.daller{
+    text-align: center;
+    display: flex;
+    margin: 0 20px 20px 100px;
+    color: #fff;
+}
+.daller #daller{
+    font-size: 25pt;
+    font-weight: 800;
+    color: #fff;
+}
+.month{
+    height: 50px;
+    font-size: 17pt;
+    color: #fff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+ul li{
+    float: inline-end;
+    font-size: 15pt;
+    color: #fff;
+    margin-left: 30px;
+}
+.button{
+    margin-top: 100px;
+    border-radius: 20px;
+    border: 1px red;
+    text-align: center;
+    font-size: 18pt;
+    color: #fff;
+}
+
+
+

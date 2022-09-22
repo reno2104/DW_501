@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '맑은고딕';
+}
+.section{
+    width: 80%;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.gallery-title {
+    text-align:  center;
+}
+.gallery-title h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.gallery-title p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-col{
+    position: relative;
+}
+.gallery-col img{
+    border-radius: 10px;
+    /* 사진 화질 보정 */
+    object-fit: cover;
+    width: 100%;
+    height: 98%;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+}
+.layer h3{
+    transition: 0.6s;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 20px;
+    color: rgba(46, 49, 49, 1);
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+}
+.layer:hover{
+    cursor: pointer;
+    background-color: rgba(232, 232, 232, 0.8);
+}
+.layer:hover h3{
+    opacity: 1;
+    bottom: 50%;
+}
