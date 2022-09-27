@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //배열 생성 방법
+    var arr1 = new Array(); // 배열 객체에 의해 배열공간 생성
+    var arr2 = []; //new array 동작
+    var arr3 = [10,20,30,40,50]; // new array 동작후 배열공간에 5개의 데이터 저장.
+
+    document.write("arr3 : " + arr3);
+
+//index 통해서 나열하기
+    arr2[0] = 10;
+    arr2[1] = 20;
+    arr2[2] = 111;
+    document.write('<br> arr2 : '+ arr2);
+
+
+    //함수 통해서 나열하기
+    arr1.push(122);
+    arr1.push(2323);
+    arr1.push(2222);
+    arr1.push(555);
+    document.write("<br> arr1 :"+ arr1);
+
+
+
+    //사과 배열 문제 시작.
+
+    array = [];
+    apple_box.push(62);
+    apple_box.push(68);
+    apple_box.push(64);
+    apple_box.push(63);
+    apple_box.push(66);
+
+    for(var i=0; i<5; i++){
+        document.write(apple_box[1]+'<br>');
+    }
+
+    // 문제.1
+    //사과상자에 사과가 평균 몇개 담겨있는지 확인
+
+    var total_apple=0;
+    for(var i=0; i<apple_box.length; i++){
+        total_apple = total_apple + apple_box[i];
+    }
+    document.write("사과상자 평균 갯수 : "+(total_apple/apple_box.length));
+
+
+    //문제 2.
+    //각 사과 상자에서 사과상자평균치 와 비교했을때 몇개 차이가 있는지 출력
+    //사과상자평균값은 정수로 구하여 사용
+    // 출력 예시) 1번 사과상자 : 3개
+
+    var avg=parseInt(total_apple/ apple_box.length);
+
+    for(var i=0; i < apple_box.length; i++){
+        document.write( i+1 + '번쨰 사과상자 :' + (apple_box[i] - avg) +'개',);
+    }
+
+
+</script>
+</html>
