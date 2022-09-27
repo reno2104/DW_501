@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //do~while (참이 아니어도 조건식 실행)
+    // 초기값 -> 반복내용 실행 -> 증감식 -> 내용 > 증감식 > 조건식
+
+    // for, while ( 참이면 조건식 실행)
+    // 초기값 > 조건식 > 내용 > 증감식 > 조건식 > 내용> 조건식
+
+var i=10;
+while(1<10){
+    alret("while문");
+    i++;
+}
+var k=10;
+do{
+    alert("do while");
+    k++;
+}while (k<10); // 참이 아니어도 한번은 실행. do~while의 경우 뒤에 세미클론 꼭 붙여야한다.
+
+var num=0;
+do{
+    alert("1~5중에 입력")
+    num = paresInt(prompt());
+}while (!(num>=1 && num <=5)); // 1~5 사이값 입력 할때까지 계속 반복
+document.write(num); // 사이값 입력시 화면에 출력.
+
+/*
+// 위의 조건식을 for, while문으로 풀어내면...
+var num1 = parseInt(prompt()); //입력 창을 먼저 입력해야한다. do~while의 경우 이 작업이 필요없음.
+while(num1>1 || num1<=5){
+    num1 = parseInt(prompt());
+}
+document.write(num1);
+*/
+
+
+</script>;
+</html>

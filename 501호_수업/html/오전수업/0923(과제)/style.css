@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:1400px;
+    height: auto;
+    margin: 0 auto;
+}
+.txt{
+    width:570px;
+    height: 50px;
+    margin: 0 auto;
+}
+.txt h2{
+    width:500px;
+    font-size: 20pt;
+    color:#4C4C4C;
+    text-align: center;
+}
+.area{
+    height: 20px;
+}
+.bingo_area{
+    width:600px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+.bingbing{
+    width: 100px;
+    height: 100px;
+    border: 1px solid#8C8C8C;
+}
+.footer{
+    width: 900px;
+    margin: 0 auto;
+}
+.txt #bt{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 15pt;
+    font-weight: 700;
+    color: #fff;
+    background: black;
+}
+.txt #bt:hover{
+    cursor: pointer;
+    background: #fff;
+    color: black;
+}
+.result{
+    width:150px;
+    height: 50px;
+    margin: 0 auto;
+}
+.result span{
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 700;
+}

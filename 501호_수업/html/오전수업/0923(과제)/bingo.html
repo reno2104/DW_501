@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="txt">
+            <h2> Let`s Go Bingo~!</h2>
+        </div>
+        <div class="area"></div>
+        <div class="bingo_area">
+            <div class="bingbing bingo1" id="bingo(1)" onclick="bingo(1)"></div>
+            <div class="bingbing bingo2" id="bingo(2)" onclick="bingo(2)"></div>
+            <div class="bingbing bingo3" id="bingo(3)" onclick="bingo(3)"></div>
+            <div class="bingbing bingo4" id="bingo(4)" onclick="bingo(4)"></div>
+            <div class="bingbing bingo5" id="bingo(5)" onclick="bingo(5)"></div>
+        </div>
+        <div class="bingo_area">
+            <div class="bingbing bingo1" id="bingo(6)" onclick="bingo(6)"></div>
+            <div class="bingbing bingo2" id="bingo(7)" onclick="bingo(7)"></div>
+            <div class="bingbing bingo3" id="bingo(8)" onclick="bingo(8)"></div>
+            <div class="bingbing bingo4" id="bingo(9)" onclick="bingo(9)"></div>
+            <div class="bingbing bingo5" id="bingo(10)" onclick="bingo(10)"></div>
+        </div>
+        <div class="bingo_area">
+            <div class="bingbing bingo1" id="bingo(11)" onclick="bingo(11)"></div>
+            <div class="bingbing bingo2" id="bingo(12)" onclick="bingo(12)"></div>
+            <div class="bingbing bingo3" id="bingo(13)" onclick="bingo(13)"></div>
+            <div class="bingbing bingo4" id="bingo(14)" onclick="bingo(14)"></div>
+            <div class="bingbing bingo5" id="bingo(15)" onclick="bingo(15)"></div>
+        </div>
+        <div class="bingo_area">
+            <div class="bingbing bingo1" id="bingo(16)" onclick="bingo(16)"></div>
+            <div class="bingbing bingo2" id="bingo(17)" onclick="bingo(17)"></div>
+            <div class="bingbing bingo3" id="bingo(18)" onclick="bingo(18)"></div>
+            <div class="bingbing bingo4" id="bingo(19)" onclick="bingo(19)"></div>
+            <div class="bingbing bingo5" id="bingo(20)" onclick="bingo(20)"></div>
+        </div>
+        <div class="bingo_area">
+            <div class="bingbing bingo1" id="bingo(21)" onclick="bingo(21)"></div>
+            <div class="bingbing bingo2" id="bingo(22)" onclick="bingo(22)"></div>
+            <div class="bingbing bingo2" id="bingo(23)" onclick="bingo(23)"></div>
+            <div class="bingbing bingo4" id="bingo(24)" onclick="bingo(24)"></div>
+            <div class="bingbing bingo5" id="bingo(25)" onclick="bingo(25)"></div>
+        </div>
+        <div class="area"></div>
+        <div class="footer">
+            <div class="txt">
+                <div class="reuslt"><span id="res" onclick="">우와</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    var randomNum=0;
+
+    function showNum(){
+        for(var i=0; i<=25; i++){
+            var num = Math.floor(Math.random()*100)+1;
+            if(randomNum.indexOf(num == -1)){
+                randomNum.push(randomNum)}
+                else{
+                    i--;
+                }
+            }
+            return randomNum;
+        }
+    
+    var output=[];
+    for(var i=0; 0<arr.length; i++){
+        if(i%5 ==0){
+            output += '<br>';
+        }
+        output += arr[i];
+    }
+    div.innerHTML('#bingo(n)'+ output);    
+
+    function bingo()
+
+
+        
+</script>
+</html>

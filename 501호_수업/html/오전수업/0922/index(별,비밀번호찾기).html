@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //반복문
+    //for (초기값; 조건식; 증감식)
+
+
+    //랜덤 값(랜덤 범위 1~100) 중에서 4의 배수만 출력하기
+    //20번 반복하여 4의 배수만 출력하기
+    //while문 없이
+
+/*
+    var i=1;
+    for(i=1; i<=20; i++){//20번 반복
+        var k=Math.floor(Math.random()*100)+1; //랜덤값 중에서
+        if(k%4==0){ // 4의 배수만
+            document.write(k + "<br>"); // 출력한다.
+
+        }
+    }
+*/
+
+//입력은 prompt로 입력하기
+//반복 횟수 10번
+//랜덤범위는 1~10
+//10번 숫자를 입력하여 입력한 숫자가 랜덤값과 일치하면
+//지뢰밞음 사망. 일치하지 않으면 회피성공 출력하기
+//반복문이 한번 등장할 때마다 새로운 랜덤값 발생
+
+/*
+for(i=1; i<11; i++){
+    var z=Math.floor(Math.random()*10)+1;
+    var i=paseInt(prompt("정수입력"));
+    if(i == z){
+        document.write(i+"지뢰밟음. <br>");
+    }
+    else{
+        document.write(i+"회피성공. <br>");
+    }
+}
+*/
+
+/* (정답)
+    for(var i =1; i<=10; i++){
+        var num=0;
+        do{
+            num=parseInt(prompt());
+        }
+        while( !(num>=1 %%num<=10));
+
+        var r=Math.floor(Math.random()*10)+1;
+        if(num==r){
+            document.write('지뢰'+ num + ':' + '<br>');
+        }
+        else{
+            document.write('살았다.'+ num + ':' + '<br>');
+        }
+    }
+
+*/
+
+/* 별 나타내기
+ for(var i=1; i<=5; i++){
+    for(var k=1; k<=6-i; K++){
+        document.write('*');
+    }
+    document.write('<br>');
+ }
+ */
+
+
+    //비밀번호 찾기
+    // 1. 비밀번호는 총 4자리 숫자.
+    // 2. 비밀번호 각 자리는 1-9중 하나이다.
+    // 3. 비밀번호에 중복은 없다. 예)2239 안됨.
+    // 4. 4자리 숫자중 첫번째 숫자는 세번째 숫자보다 7크다.
+    // 5. 두번째 숫자는 네번째 숫자보다 작다.
+    // 6. 비밀번호를 역순으로 한 숫자와 비밀번호를 더하면 16566이다.
+    // 7. 위 조건에 맞는 비밀번호 4자리를 출력하시오.
+
+
+        // 정답
+    for(var a=1; a<=9; a++){
+        for(var b=1; b<=9; b++){
+            for(var c=1; c<=9; c++){
+                for(var d=1; d<=9; d++){ //1~2번 조건.
+                    if(a!=b && a!=c && a!=d && b!=c && b!=d & c!=d){ //3번째 조건
+                        if(a == c+7){ // 4번째 조건
+                            if(b<d){ //5번째 조건
+                                var i=(a*1000)+(b*100)+(c*10)+d;
+                                var z=(d*1000)+(c*100)+(b*10)+a; // 6번째 조건
+                                if(i+z == 16566){ //1~6번이 맞다면..
+                                    document.write("비밀번호 : "+i); // 7번 출력.
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+/*
+    for(var a=1; a<=9; a++){
+        if(a == 0){
+            a > (c < 7);
+        }
+        for(var b=1; b<=9; b++){
+            document.write(b);
+        if(b==0){
+            b < d; 
+        }
+    }
+        for(var c=1; c<=9; c++){
+            document.write(c);
+    }
+    for(var d=1; d<=9; d++){
+            document.write(d);
+    }
+    if(i=(a+b+c+d) == (d+c+b+a)){
+        i=16566;
+    }
+    document.write(a+b+c+d);
+}
+*/
+</script>
+</html>
