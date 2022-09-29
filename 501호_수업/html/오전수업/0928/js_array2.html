@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_array2.html</title>
+    <script>
+      window.onload = function () {
+        // onload는 브라우저에 출력된이후를 뜻함 window.onload는
+        // 브라우저에 모든 html이 출력된 이후
+        document.getElementById('docread').addEventListener('change', readFile);
+      };
+      async function readFile(e) {
+        var file = e.target.files[0]; // input 태그에서 선택한 파일 객체
+        if (!file) {
+          // 파일객체 존재유무
+          return; // 존재하지않으면 종료
+        }
+
+        var text = await file.text();
+
+        text = text.split('\n'); //\n : 엔터 문자. split : 문자열 분할 
+        //document.write(text[1] + '<br>');
+
+        /*
+        var reader = new FileReader(); // 파일 불러오기 위한 reader 객체 생성
+        reader.onload = function (e) {
+          filedata = e.target.result; // 파일 불러오기 위한 리더기
+        };
+        reader.readAsText(file, 'euc-kr'); // 리더기를 통해 file에 담겨있는 내용 가져오기
+        */
+      }
+
+      var list = new Array(); //새로운 배열을 만들겠다.
+
+      function out_list(){
+        var out ="";
+        for(let i in list){ //  배열을 위한 for문
+          out += list[i]+"<br>";
+        }
+        document.querySelector("#list").innerHTML = out;
+      }
+      
+      function search(){
+        var word = document.getElementById("word").value;
+        var name = word.value; // 검색어 가지고 옴.
+
+        for(let i in list){
+      //  let temp =  list[i].split(" "); // 띄어쓰기 기준으로 원하는 값만 찾기.
+      //  if(temp[0] == name){ //이름과 검색어가 갖냐
+
+        //indexOf(찾을문자열) 함수는 문자열 안에서 입력한 문자열과 일치하는 위치를 찾아
+        // 인덱스를 반환한다.
+        //예) "abcd".indexOf("bc") -> 결과 1. 
+        if(list[i].indexOf(name) != -1){  
+          document.querySelector('#list').innerHTML = list[i];
+          return; // search 함수 종료
+        }
+      }
+      document.querySelector("#list").innerHTML = '검색어와 일치하는 정보가 없습니다.';
+      } // search 함수 종료
+      </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <style>
+    .srh_wrap{
+      display:flex;
+      margin-top: 10px;
+      border:1px solid black;
+      width:220px;
+    }
+    .srh_wrap input{
+      border: 0;
+      outline:none; /* 클릭시 굵게 바뀌는 현상 제거*/
+      width:200px;
+    }
+  </style>
+  </head>
+  <body>
+    <div>
+      <input type="file" id="docread" />
+    </div>
+    <div>
+      <input type="button" onclick="out_list()" value="전체리스트">
+        <div class="srh_wrap">
+          <input type="search" id="word">
+          <span onclick="search()"><i class="bi bi-search"></i></span>
+    </div>
+  </div>
+    <div id="list"></div>
+  </body>
+</html>

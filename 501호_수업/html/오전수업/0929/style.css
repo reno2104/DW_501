@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+body, div, table, p, ul{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*  */
+    font-family: '맑은고딕';
+    background: #778899;
+    vertical-align: baseline;
+    /* 수직정렬 */
+
+}
+
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+table{
+    width:1000px;
+    border-spacing: 0;
+    /* 테이블 내 선과 선 사이 간격조정 */
+}
+table tr td{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+img{
+    width:50px;
+    height: 50px;
+}
+
+

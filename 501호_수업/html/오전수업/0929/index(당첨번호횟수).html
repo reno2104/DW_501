@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div>
+        <input type="file" id="dcread">
+        <button type="button" onclick="appear()">출현횟수</button>
+    </div>
+    <div>
+
+        <input type="number" id="cnt">
+        <button type="button" onclick=""></button>
+    </div>
+    <div id="list"></div>
+</body>
+<script>
+    function appear(){
+        //당첨번호 시작 위치.(인덱스) 2 -> list[0].split("\t")[2]
+
+        var number = new Array(45);
+        // 표현방법 : number[0]-1, number[1]-2, number[2]-3
+
+        number.fill(0); // 배열 45개 공간 0으로 초기화.
+        //당첨번호들만 추출하는 방법
+        for(var i in list){// i 변수에 배열의 인덱스가 차례로 대입.
+            var temp =list[i].split("\t");
+            for(var k=2; k<temp.length; k++){//(var i in temp+2)
+                number[parseInt(temp[k])-1]++;
+            }
+        }
+
+        var view='';
+        //a += 23 -> a = a+23
+        for(var i in number){ 
+            view += "<div>"+(i+1) + "->" + number[i] + "개</div>";
+        }
+        document.querySelector("#list").innerHTML = view;
+    }
+
+    /* 가장 최근 당첨회차부터 input 태그에 입력한 숫자만큼 
+        중에서 0번 출현한 숫자, 또는 15번 이상 출현한 숫자를 찾아 출력
+    예시) input 입력숫자 10
+1034회부터 1025회차까지 로또당첨 번호 출현횟수 구하기.
+이중에서 0번 나온 숫자 또는 15번이상 나온 숫자 찾아 출력 */
+
+function selectAppear(){
+    var cnt = document.querySelector('#cnt').value;
+    var number = new Array();
+    for(var i=0; i<cnt; i++){
+        var temp= list[i].split("\t");
+        for(var k=2; k<temp.length; k++){
+            number[parseInt(temp[k])-1]++;
+        }
+    }
+    var show="<h3> 0번 출현한 숫자</h3>";
+    for(var i in number ){
+        if(number[i]==0){
+            show +="<div>"+(i+1) + "</div>";
+        }
+    }
+    show +="<h3>15번이상 출현한 숫자</h3>";
+    for(var i in number ){
+        if(number[i]>=15){
+            show +="<div>"+(parseInt(i)+1) + "</div>";
+        }
+    }
+    document.querySelector('#list').innerHTML=show;
+}
+
+</script>
+</html>
