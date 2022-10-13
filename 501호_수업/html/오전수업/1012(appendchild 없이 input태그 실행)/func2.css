@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '맑은 고딕';
+}
+.box{
+    margin: 0 auto;
+}
+#birth{
+    width:200px;
+    height: 37px;
+    font:17pt;
+}
+.input{
+    width:100px;
+    height: 27px;
+    font:15pt;
+}
