@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin: 0 auto;
+    }
+    input{
+        width:100px;
+    }
+    label{
+        width:50px; display: inline-block;
+        text-align: center;
+    }
+</style>
+<body>
+<div>
+    <label for="col">행</label>
+    <input type="number" id="col">
+    <label for="row">열</label>
+    <input type="number" id="row">
+    <br>
+    <label for="width">너비</label>
+    <input type="number" id="width">
+    <label for="height">높이</label>
+    <input type="number" id="height">
+</div>
+    <button onclick="send_value()">테이블 생성</button>
+
+</body>
+<script>
+    function send_value(){
+      var col=document.getElementById('col').value; 
+      var row=document.getElementById('row').value;
+      var width=document.getElementById('width').value; 
+      var height=document.getElementById('height').value;
+
+        var out="<table border=1>";
+
+            for(var i=1; i<=col; i++){
+                out += "<tr>";
+                    for(var k=1; k<=row; k++){
+                        out += "<td width="+width+"height="+height+"></td>"
+                    }
+                out += "</tr>";
+
+                opener.document.getElementById('table_view').innerHTML=out;
+            }
+}
+</script>
+</html>

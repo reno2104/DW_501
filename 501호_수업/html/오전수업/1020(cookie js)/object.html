@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_object.html</title>
+<script>
+
+/*
+    ### screen - 화면정보 제공
+    screen.width : 화면의 전체 너비 (해상도 너비)
+    screen.height : 화면의 전체 높이 (해상도 높이)
+    screen.availWidth : 실제 사용 가능한 화면 너비
+    screen.availHeight : 실제 사용 가능한 화면 높이
+    screen.colorDepth : 사용 가능한 색상 수
+    screen.pixelDepth : 한 픽셀당 비트 수
+    */
+
+
+</script>
+</head>
+<body>
+    <form name="fm" method="get" action="save.html">
+        <!-- input 태그 만들때 name 꼭 쓰기 -->
+        <input type="text" name="id" id="id" value="admin">
+        <input type="password" name="pw" id="pw">
+        <input type="date" name="day" id="day">
+        <input type="checkbox" name="fav" id="fav">
+        <a href="javascript:view();">보기</a>
+    </form>
+</body>
+</html>
+
+<script>
+
+    // ### 쿠키 
+    // - 사용자가 브라우저 사용 중에 입력하거나 검색한 정보를 저장해 놓는 것
+    // 생존 시간을 지정 할 수 있기도 하고 기본 생존시간이 정해져 있기도 하다
+    /*
+    특징
+    최대 300개까지 사용가능
+    하나의 쿠키 크기는 4KB로 제한
+    (문자하나의 크기 1byte, 1byte == 8bit )
+    쿠키의 정보는 HTTP헤더를 통해 클라이언트 브라우저와 서버가 공유한다.
+    사용장 의해 웹페이지가 요청되면 Set-Cookie 필드에 의해 쿠키가 브라우저에 저장됨
+    Set-Cookie : 유효기간, 보안정보 등을 포함
+    사용자가 다시 같은 페이지를 요청했을 때 저장되어 있던 쿠키가 발견되면 브라우저는
+    웹 페이지를 요청하는 헤더에 쿠키필드를 포함하여 전송한다.
+    쿠키의 내용은 암호화 되지 않는다.
+    Set-Cookie 구조
+    - name : 생성될 쿠키의 이름 (개발자가 꼭 해야할 작업)
+    - 값 : 쿠키에 저장될 데이터 (개발자가 꼭 해야할 작업)
+    - expires : 유효기간 지정
+    - path : 저장된 쿠키와 일치하는 url 의 path 와 도메인 값이 일치하는 url 페이지를
+            요청하게 되면 해당쿠키가 서버로 전달
+    - domain : url 의 도메인 부분을 정의하는 것
+    - secure : 데이터 전송시 보안을 위한 프로토콜을 지정할 때 사용
+    */
+
+    setCookie("name","kim",1);
+
+    function setCookie(쿠키이름, 데이터, 유효기간){
+        // new Date() : 현재 시간을 알려줌
+        const day = new Date();
+        day.setTime(day.getTime() + (유효기간*24*60*60*1000) );
+        // 시간을 문자열로 표기
+        let expires = "expires = "+ day.toUTCString();
+        // ;(세미콜론) - 구분자 역할을 위해 넣어줌
+        document.cookie = 쿠키이름 +"="+데이터+";"+expires+";path=/";
+    }
+    // 만들어진 Cookie를 가져오는 함수
+    function getCookie(){
+        // decode : 사람이 볼 수 있는 언어로 바꿔주는 작업
+        let decode_cook = decodeURIComponent(document.cookie);
+        let temp = decode_cook.split(';');
+        for(let i = 0; i<temp.length; i++){
+            let c = temp[i];
+            while(c.charAt(0) == ''){
+                c = c.substring(1); // 마지막 index까지 추출.
+            }
+            if (c.indexOf("name") ==  0){
+                alert( c.substring("name=".length, c.length) );
+            }
+        }
+    }
+    getCookie();
+
+
+    // form
+    // document.getElementById("day").value;
+    // document.fm(form이름).id(input태그 id).value;
+    // form 태그 안에 input 태그를 가져오는 방법은 용이하다.
+    // form 같은 경우는 document 바로 하위 객체로 가능하다
+
+    document.write("길이 : " + document.forms.length + "<br>");
+    document.write("첫번째 form name : " + document.forms[0].name + "<br>");
+    document.write(document.forms.fm.name + "<br>");
+    document.write(document.all.fm.name + "<br>");
+    document.write(document.forms["fm"].name + "<br>");
+    document.write(document.forms[0].elements[0].value + "<br>");
+
+    // ### document 객체
+    document.write("title : " + document.title +"<br>");
+
+    // 마지막 수정한 시간이 몇시인지 : document.lastModified
+    document.write("마지막 수정일 : " + document.lastModified + "<br>");
+
+    // 기본 배경색은 white
+    document.bgColor = "pink";
+    document.write("배경색 : "+document.bgColor + "<br>");
+    document.write("링크색 : "+document.linkColor + "<br>");
+    document.write("링크색 : "+document.alinkColor + "<br>");
+    document.write("링크색 : "+document.vlinkColor + "<br>");
+
+
+    function view(){
+        var forms = document.forms; // 현재문서의 form을 배열로 받기
+        // alert(forms.length);
+        // 여러개 form이 있는경우
+        for(var i in forms){
+            var tags = forms[i].elements; // 해당 form의 tag를 배열로 받기
+            for(var k in tags){ // id, inpyt, form 의 이름을 몰라도 가져올수 있는 방식
+                alert(tags[k].value);
+            }
+        }
+    }
+
+    </script>

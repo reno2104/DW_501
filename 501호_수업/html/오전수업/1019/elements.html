@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick='new_window()'>새창열기</button>
+
+    <a href="child.html" target="_blank">이동</a>
+    <iframe src="child.html"></iframe>
+</body>
+
+<script>
+    function new_window(){
+        var Mwidth=screen.width;
+        var Mheight=screen.height;
+
+        var width=500, height=700;
+        var left= Mwidth/2 - width/2;
+       var url ="child.html";
+       var win_name =" ";
+       var option ="width="+width+",height="+height+
+       ",left="+left+",top="+top;
+
+    var child = window.open(url, win_name, option);
+    //child 변수에 새윈도우의 핸들값 저장
+
+    var name = document.getElementById('name').value;
+    child.document.getElementById('name_view').innerHTML=name;
+    }
+
+
+</script>
+</html>

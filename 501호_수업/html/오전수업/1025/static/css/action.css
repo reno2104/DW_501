@@ -1,0 +1,15 @@
+#main-section{
+    order:1;
+    width:100%;
+    background: #183786;
+}
+.page_title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:90%;
+    padding:5% 5%;
+    max-width: 1000px;
+    margin:0 auto;
+    color: white;
+}

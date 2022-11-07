@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function move(){
+            location.href = "https://www.naver.com";
+        }
+    </script>
+
+    <a href="https://www.naver.com">네이버</a>
+    <!-- location 객체 -->
+    <button onclick="move()">네이버</button>
+    
+    
+<button onclick="location_object()">location 객체보기</button>
+
+
+    <!-- 
+        window 객체
+        location 객체(주소)
+        document 객체(출력 화면)
+        history 객체 (방문 내역)
+        screen 객체(브라우저와 브라우저가 표시되는 모니터 화면 전체)
+        navigator 객체(브라우저 정보)
+     -->
+     <!-- 
+        1. window 객체 - 최상위객체
+            설명 ~ 브라우저를 열었을 떄 생성되는 항상 존재하는 객체
+        2. 속성 : classes, defaultStatus, document, frame, history, length, location, navigator 등
+
+        -    classes : HTML에서 정의된 모든 스타일 시트
+        -    defaultStatus : 상태바에 표시될 문자열 지정.
+        -    frame : window에 포함된 프레임 수 반환
+                -> 여러 프레임이 존재할 경우 배열형태로 표시가능.
+        -    history : window가 방문한 url 정보
+        -    innerHeight : 현재 브라우저의 document 영역의 높이
+        -    innerWidth : 현재 브라우저의 document 영역의 너비
+        -    location : 현재 문서의 url정보
+        -    menubar: 메뉴바 표시 여부 설정
+        -    opener : open()함수로 생성한 윈도우 이름. 현재 유저가 보고 있는 페이지
+        -    name : 새로운 window창 이름 
+        -    outerHeight : 윈도우 밖 테두리 높이 
+        -    outerWidth : 윈도우 밖 테두리 너비
+        -    pageXOffset : window에 표시되는 X 위치
+        -    pageYOffset : window에 표시되는 Y 위치
+        -    scrollbars : 스크롤바 표시여부
+
+        3. window 객체 메소드
+
+        -    alert() : 메시지와 Ok버튼을 가진 메시지 박스
+        -    setInterval : 지정된 시간만큼 반복
+        -    setTimeout : 지정된 시간 이후에 실행
+        -    clearInterval : setInterval 해제
+        -    clearTimeout : setTimeout 해제
+        -    close() : window 닫기
+        -    confirm : 질문, 다이얼로그 확인과 취소 버튼을 가진 박스
+        -    back, forward : 뒤, 앞으로 이동
+        -    moveBy(x, y) : 윈도우 이동(상대적)
+        -    moveTo(x, y) : 윈도우 이동(절대적)
+        -    resizeBy(x, y) : 윈도우 크기 변경(상대적)
+        -    resizeTo(x, y) : 윈도우 크기 변경(절대적)
+        -    open : 새 윈도우 생성
+            -> open(url, window_name, property);
+            -> url: 페이지 주소
+            -> window_name:_blank(새창에 새 페이지가 열림), _parent(현재 페이지에 열림), 
+                            _self(현재 페이지를 대체한다.), _top(로드된 프레임셋 대체)
+            -> property : 새 window의 옵션 부여. 
+                * height 새창의 높이 지정
+                * width 새창의 너비 지정
+                * left 모니터 화면 왼쪽에서부터 지정
+                * right 모니터 화면 오른쪽에서부터 지정
+
+        *** 크롬에서는 동작 안하는 yes/no 옵션들
+        -    channelmode : 전체화면 (yes,NO)
+        -    fullscreen : 전체화면 (yes, no)
+        -    location : 주소표시줄 표시여부(yes, no) * 오페라에서만 적용
+        -    menubar : 메뉴바 표시여부(yes, no)
+        -    status : 상태바 표시여부(yes ,no)
+        -    resizable : window 크기 가능 여부(yes, no)
+        -    toobat : 툴바 vytlduqn(yes, no)
+
+
+      -->
+</body>
+</html>

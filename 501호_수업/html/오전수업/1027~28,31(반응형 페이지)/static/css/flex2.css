@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+    width: 90%;
+    height: 100px;
+    margin: 30px auto;
+    border: 1px solid black;
+  }
+  .flex div {
+    width: 33.3%;
+  }
+  .flex div:nth-child(1) {
+    background: red;
+    height: 80px;
+  }
+  .flex div:nth-child(2) {
+    background: green;
+    height: 30px;
+    align-self: flex-end;
+  }
+  .flex div:nth-child(3) {
+    background: pink;
+    height: 60px;
+  }
+  
+  /* 👉 높이가 다를시 배치하는 방법 */
+  
+  #flex1 {
+    align-items: stretch;
+  }
+  #flex2 {
+    align-items: flex-start;
+  }
+  
+  /* #flex3 {
+    align-items: flex-end;
+  } */
+  #flex4 {
+    align-items: center;
+  }
+  #flex5 {
+    align-items: baseline;
+  }

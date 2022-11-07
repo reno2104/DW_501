@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>부모 윈도우</h1>
+
+    <input type="text" name="name" id="name" placeholder="이름">
+
+    <button onclick="new_window()">전송</button>
+</body>
+<script>
+    function new_window(){
+        var name = document.getElementById('name').value;
+    child.document.getElementById('name_view').innerHTML=name;
+    }
+    </script>
+</html>

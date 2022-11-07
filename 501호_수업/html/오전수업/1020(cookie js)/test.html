@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="bg" id="bg">
+    <input type="number" name="size" id="size">
+    <button onclick="cook_save()">쿠키등록</button>
+    <a href="test2.html">index 이동</a>
+</body>
+<script>
+    function cook_save(){
+        var bg = document.querySelector('#bg').value;
+        var size = document.querySelector('#size').value;
+        setCookie('bg',bg,3);
+        setCookie('fontSize',size,3);
+    }
+
+    function setCookie(쿠키이름, 데이터, 유효기간){
+        // new Date() : 현재 시간을 알려줌
+        const day = new Date();
+        day.setTime(day.getTime() + (유효기간*24*60*60*1000) );
+        // 시간을 문자열로 표기
+        let expires = "expires = "+ day.toUTCString();
+        // ;(세미콜론) - 구분자 역할을 위해 넣어줌
+        document.cookie = 쿠키이름 +"="+데이터+";"+expires+";path=/";
+    }
+    </script>
+</html>
