@@ -1,0 +1,18 @@
+1. 모르는 용어가 나오면 
+구글에 단어만 검색한다.
+
+2. okky 사이트에서 질문을 보지 않는다.
+
+3. 
+ 좋은 블로그 보는 법
+ 1. 티스토리
+ 2. 개발 블로그 (사이트 주소에 개발용어가 들어가 있음)
+- https://developer.mozilla.org/ (html,css 는 여기가 최강)
+
+
+자기가 어느정도 서치를 해봤다.
+1. stackoverflow (모든 프로그래밍 언어 포함)
+2. ** in + 프로그래밍 언어
+ex) 
+what is for in java
+what is flex in css

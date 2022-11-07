@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="print">
+    <button onclick="check()">확인</button>
+</body>
+<script>
+    var x = 10;
+
+    //for문 : 뭔가를 반복해서 실행하는 것. **실무에서 엄청 많이 사용함.
+    for(var i=0; i<3; i++){ // for문 시작
+        console.log(i);
+    } //for문 끝.
+
+    //1. var i=0; 초기문
+    //2. i<3; 조건식
+    //3. console.log(i); <- 작업문
+    //4. i++ 반복 후 작업
+    //5. ++ 1씩 증가.
+
+    for(var i=0; i<6; i++){ // for문 시작
+        console.log(i);
+    } //for문 끝.
+
+    var i = 2;
+    if(i%2 == 0){
+        console.log('짝수입니다.');
+    }
+    for(var i=1; i<=5; i++){//문제1. 짝수를 출력하시오.
+        if(i % 2 == 0){
+        console.log("i 는 : "+i+" 짝수입니다.");
+        }
+    }
+    for(var i=1; i<=5; i++){ // 문제2. i가 4일때 i는 4입니다. 출력
+        if(i % 4 == 0){
+            console.log("i는 : 4입니다.");
+        }
+    }
+
+    for(var i=0; i<=5; i++){ //문제3. i가 2하고 4일 때 'hello world'출력하기.
+        if(i == 2 || i == 4 ){
+            console.log("hello world");
+        }
+        // or 연산자 : ||
+    }
+
+    // for(1. 초기식; 2. 조건식 ; 3. 작업후 실행;){
+    //    3. 작업문
+    // }
+
+    var count = 0;
+    for(var i = 1; i <= 10; i++){ //문제 4. 1부터 10까지 짝수 갯수를 구하시오.
+        if(i % 2 == 0){
+            count++;
+        }
+                }
+    console.log('짝수 갯수는 '+ count +" 입니다.");
+
+    var sum = 0;
+    for (var i = 1; i <= 10; i++){ //문제 5. 1부터 10까지의 합산을 구하시오. 정답) 55
+        sum = sum + 1;
+        }
+        console.log("1부터 10까지 합산하면 "+ sum);
+    
+    
+</script>
+</html>

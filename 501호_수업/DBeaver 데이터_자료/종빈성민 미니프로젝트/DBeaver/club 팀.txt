@@ -1,0 +1,11 @@
+CREATE TABLE club comment '팀'(
+club_Name varchar(15) comment '클럽명' PRIMARY KEY,
+
+club_History date(10) comment '클럽창단일',
+uniform_Numbers int(5) comment '등번호',
+club_Sadium_LOC varchar(10) comment '연고지',
+sponsor_Name varchar(10) comment '스폰서이름',
+artist_position varchar(10) comment '포지션',
+
+FOREIGN KEY (league_Numbers) REFERENCES (league_Numbers) VALUES('경기번호')
+)

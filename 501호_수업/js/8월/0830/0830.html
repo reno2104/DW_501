@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" class="input-box">
+        <input type="text" value="안녕하세요.">
+        <input type="text" value="반갑습니다.">
+        <input type="text" value="여기가 어디요?">
+        <input type="text" value="나는 누구죠?">
+        <input type="text" value="여기서 뭐합니까?">
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+    </div>
+    <button onclick="submit()">확인</button>
+</body>
+<script>
+
+    function submit(){
+        var box = document.getElementById('box').children;
+        for(var i=0; i<box.length; i++){
+            var inputValue = box[i];
+            if(inputValue.value == ''){
+                alert('값을 입력해주세요~');
+                inputValue.focus();
+                return false;
+            }
+        }
+    }
+
+        //문제1. i가 3,6,9일때 짝 출력!
+    for(var i=1; i<10; i++){
+        if(i%3 == 1){
+            console.log("'i'는 짝입니다.");
+
+        }
+        }
+
+        //문제2. for문을 이용해서 0부터 50까지 출력
+        for(var i=0; i<51; i++){
+            console.log(i);
+        }
+
+        //문제3. 10, 20, 30, 40, 50일때 hello world 출력
+
+        for(var i=1; i<=50; i++){
+            if(i%10 == 1){
+                console.log('hello world');
+            }
+        }
+
+        //문제4. 1부터 10까지 출력하시오. 단, 5일때는 출력 불가능.
+        for(var i=1; i<11; i++){
+           if(i) console.log(i);
+        }
+        // 문제 5. for 문을 이용해서 구구단 2단만 만들기
+        for(var i=1; i<10; i++){;
+        }
+</script>
+</html>

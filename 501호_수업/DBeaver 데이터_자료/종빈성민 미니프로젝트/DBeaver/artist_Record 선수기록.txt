@@ -1,0 +1,11 @@
+CREATE TABLE artist_Record comment '선수기록'(
+record_Number varchar(5) comment '기록번호' AUTO_INCREMENT PRIMARY KEY,
+
+shooting int(5) comment '슈팅',
+effective_shot int(5) comment '유효슈팅',
+pass int(5) comment '패스',
+goal int(5) comment '골',
+assist int(5) comment '도움',
+people_Numbers int(10) comment '예약인원',
+FOREIGN KEY (staff_Empno) REFERENCES (staff_Empno) VALUES('관계자 사원번호')
+)

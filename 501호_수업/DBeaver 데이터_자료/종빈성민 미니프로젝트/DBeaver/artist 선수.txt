@@ -1,0 +1,15 @@
+CREATE TABLE artist comment '선수'(
+artist_Number varchar(10) comment '선수번호' PRIMARY KEY,
+
+name varchar(20) comment '선수이름',
+uniform_Numbers  int(5) comment '등번호',
+nation varchar(10) comment '국적',
+age int(3) comment '나이',
+position varchar(10) comment '포지션',
+roster varchar(4) comment '선발여부',
+transfer_fee bigint(10) comment '이적료',
+weekly salary bigint(10) comment '주급',
+contract_start_date date(10) comment '계약시작일',
+contract_end_date date(10) comment '해지일',
+FOREIGN KEY (club_Name) REFERENCES (club_Name) VALUES('클럽명')
+)

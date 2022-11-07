@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="userId" type="text" placeholder="아이디입력">
+    <input id="userPassword" type="password" placeholder="비밀번호 입력">
+    <input id="userRePassword" type="password" placeholder="비밀번호 재입력">
+    <input id="userEmail" type="email" placeholder="이메일 입력">
+    <button onclick="dojoin()">회원가입</button>
+</body>
+<script>
+    function dojoin(){//함수시작
+        var data = document.getElementById('userId').value;
+        if(data == ''){ //빈칸 체크
+            alert('고객님! 아이디를 입력해주세요!');
+            // 알림창 뜬 후 해당 아이템으로 커서 자동으로 깜빡이게 하기.
+            document.getElementById('userId').focus();
+            return false;
+            //더이상 아래코드로 실행을 이어가지 않는다.
+        }
+        var password = document.getElementById('userPassword').value;
+        if(password == ''){
+            alert('고객님! 비밀번호를 입력해주세요!');
+            document.getElementById('userPassword').focus();
+            return false;
+        }
+        var rePassword = document.getElementById('userRePassword').value;
+        if(password = ''){
+            alert('고객님! 비밀번호를 재입력해주세요!');
+            document.getElementById('userRePassword').focus();
+            return false;
+        }
+        var email = document.getElementById('userEmail').value;
+        if(email == ''){
+            alert('고객님! 이메일을 입력해주세요!');
+            document.getElementById('userEmail').focus();
+            return false;
+        }
+        if(password != rePassword){
+            alert('비밀번호가 서로 다릅니다!');
+            return false;
+        }
+
+
+        alert('회원가입 완료~');
+    }//함수 끝
+
+</script>
+</html>

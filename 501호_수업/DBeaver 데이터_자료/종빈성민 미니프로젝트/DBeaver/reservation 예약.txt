@@ -1,0 +1,10 @@
+CREATE TABLE reservation comment '예약'(
+customer_ID varchar(10) comment '예약자 아이디' AUTO_INCREMENT PRIMARY KEY,
+
+customer_Name varchar(10) comment '예약자이름'
+seat varchar(10) comment '좌석'
+address varchar(40) comment '주소'
+phone_Number varchar(12) comment '연락처'
+people_Numbers int(10) comment '예약인원'
+FOREIGN KEY (league_Numbers) REFERENCES (league_Numbers) VALUES('경기번호')
+)

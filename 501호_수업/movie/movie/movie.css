@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  /* 간단한 사이트에서만 넣자. */
+  font-family: '맑은 고딕';
+}
+.container {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 100px auto;
+}
+.title {
+  text-align: center;
+  font-size: 35pt;
+}
+.movie-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.series-row {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  flex-basis: 17%;
+}
+.poster {
+  width: 100px;
+  height: auto;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input id="num" type="text" placeholder="아무거나 입력하시요.">
+    </div>
+    <button onclick="check()">제출</button>
+</body>
+<script>
+    // 문제 1. for문을 이용해서 구구단 3단을 완성하시오~
+        var x = 3;
+        for(var i=1; i<=9; i++){
+            var result = x * i;
+            console.log( x + " * "+i+" = "+result);
+
+        }
+
+    // 문제 2. 1~30까지 숫자가 나오게 완성.
+    function check(){
+        for(var i=0; i<=30; i++){
+            console.log(i);
+        }
+    }
+</script>
+</html>

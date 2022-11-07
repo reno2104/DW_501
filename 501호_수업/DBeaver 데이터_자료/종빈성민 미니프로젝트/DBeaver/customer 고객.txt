@@ -1,0 +1,8 @@
+CREATE TABLE customer comment '고객'(
+customer_Registration varchar(10) comment '고객주민번호' AUTO_INCREMENT PRIMARY KEY,
+
+customer_Name varchar(10) comment '고객이름'
+customer_Age int(4) comment '고객나이'
+customer_Nation varchar(10) comment '국적'
+FOREIGN KEY (customer_ID) REFERENCES (customer_ID) VALUES('예약자 아이디')
+)
