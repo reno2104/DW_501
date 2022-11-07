@@ -1,0 +1,38 @@
+
+#form{
+    width:300px;
+    margin:0 auto;
+    margin-top:100px;
+    position:relative;
+}
+.input_line{ width:90%;margin:0 5%; height:50px; position:relative;}
+.input_line .movie{
+    width:100%;
+    height:25px;
+    border:0;
+    border-bottom:2px solid #305ee8;
+    font-size:17px;
+}
+
+.input_line label{
+    position:absolute;
+    top:5px;
+    left:10px;
+    font-size:17px;
+}
+.active ~ label{
+    top:-15px;
+    font-size:10px;
+}
+.bt{
+    width:90%;
+    margin:10px 5%;
+}
+.bt a{
+    display:block;
+    border:2px solid #6ef3cb;
+    border-radius:7px;
+    text-align:center;
+    text-decoration:none;
+    font-size:17px;
+}

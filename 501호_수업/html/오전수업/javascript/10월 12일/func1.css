@@ -1,0 +1,24 @@
+/* func1.css */
+@charset "utf-8";
+
+.input_wrap input{
+    width:150px;
+    height:35px;
+    border-radius:7px;
+}
+.input_wrap button{
+    width:80px;
+    height:35px;
+    color:white;
+    background:black;
+    font-size:15px;
+}
+#output{
+    width:300px;
+    margin:0 auto;
+}
+#output span{
+    display:inline-block;
+    width:150px;
+    height:30px;
+}

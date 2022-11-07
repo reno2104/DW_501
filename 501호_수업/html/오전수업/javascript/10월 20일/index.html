@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> 테스트 </p>
+</body>
+</html>
+<script>
+var bg = getCookie("bg");
+var size = getCookie("fontSize");
+document.bgColor=bg;
+document.body.style.fontSize=size+"px";
+
+function getCookie(name){
+    name = name+"=";
+    let decode_cook = decodeURIComponent(document.cookie);
+    let temp = decode_cook.split(';');
+    for(let i =0; i<temp.length; i++){
+        let c = temp[i];
+        while(c.charAt(0) == ' '){
+            c =c.substring(1);
+        }
+        if (c.indexOf(name) == 0){
+            return c.substring(name.length,c.length);
+        }
+    }
+}
+
+</script>

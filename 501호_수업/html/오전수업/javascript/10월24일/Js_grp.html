@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #house{
+        width:600px;
+        height:500px;
+        border:2px solid black;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <canvas id="house" width="600" height="500"></canvas>
+    </div>
+</body>
+</html>
+<script>
+    var canvas = document.getElementById("house");
+    var ctx = canvas.getContext('2d');
+
+    //굴뚝
+    ctx.fillStyle='rgb(153,56,0)';
+    ctx.fillRect(130,130,30,70);
+
+    //지붕
+    ctx.beginPath();
+    ctx.moveTo(100,200);
+    ctx.lineTo(250,100);
+    ctx.lineTo(400,200);
+    ctx.fillStyle='yellow';
+    ctx.fill();
+    ctx.closePath();
+
+    //집
+    ctx.fillStyle='green';
+    ctx.fillRect(100,200,300,150);
+
+    //연기
+    ctx.beginPath();
+    ctx.arc(145,100,15,0,2*Math.PI,true);
+
+    ctx.moveTo(131,80);
+    ctx.arc(120,80,11,0,2*Math.PI,true);
+
+    ctx.moveTo(108,60);
+    ctx.arc(100,60,8,0,2*Math.PI,true);
+    ctx.closePath();
+    ctx.fillStyle='rgb(61,183,204)';
+    ctx.fill();
+
+</script>
