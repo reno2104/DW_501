@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table, td, th {
+            border: 1px solid;
+        }
+        table{
+            border-collapse: collapse;
+            width: 700px;
+            height: 250px;
+            margin: 100px auto;
+        }
+        .title{
+            text-align: right;
+            height: 50px;
+        }
+        .title td{
+            padding-right: 5%;
+        }
+        .sub-menu{
+            width: 50px;
+        }
+        li{
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .sub-menu{
+            width: 200px;
+            border: 1px;
+            background: rgb(0,100,204);
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .nav{
+            text-align: center;
+        }
+        p{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        p:hover{
+            color: #999;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        img{
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+        .img-box{
+            width: 30%;
+            height: 50px;
+        }
+    
+        .img-box img:hover{
+            cursor: pointer;
+            /* 투명도 */
+            opacity: 0.4;
+        }
+        .notice-box{
+            height: 150px;
+        }
+        .footer{
+            height: 47px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 1 row -->
+        <tr class="title">
+            <td colspan="6">로그인/문의</td>
+        </tr>
+        <!-- 2 row -->
+        <tr>
+            <td class="nav" colspan="6">
+                <p>HOME</p>
+                <p>센터소개</p>
+                <p>유기동물공고</p>
+                <p>유기동물이야기</p>
+                <p>참여마당</p>
+                <p>공지사항</p>
+            </td>
+        </tr>
+        <!-- row -->
+        <tr>
+            <td class="sub-menu" rowspan="3">
+                <ul>
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                    <li>서브메뉴4</li>
+                </ul>
+            </td>
+            <td></td>
+            <td class="img-box" colspan="3">
+                <img src="images.png">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="notice-box" colspan="5" rowspan="2">공지사항 NEWS</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td class="footer" colspan="6"></td>
+        </tr>
+    </table>
+</body>
+</html>
