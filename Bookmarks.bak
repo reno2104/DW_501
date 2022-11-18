@@ -1,0 +1,235 @@
+{
+   "checksum": "e58d17fe1eb6f8262510c3de005b9218",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13278569833834905",
+            "date_last_used": "13312627929128405",
+            "guid": "03932996-b0fc-4df6-83e0-439bc50094f1",
+            "id": "6",
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://youtube.com/"
+         }, {
+            "date_added": "13305253496097178",
+            "date_last_used": "13313139769769427",
+            "guid": "9dea9f4b-df57-4a62-a3ca-7739015330cc",
+            "id": "9",
+            "name": "reno2104 (Reno_IM SUNG MIN)",
+            "type": "url",
+            "url": "https://github.com/reno2104"
+         }, {
+            "date_added": "13305253383303059",
+            "date_last_used": "13313116979212236",
+            "guid": "860275f8-c5d2-4baa-a3cc-22a7b3249890",
+            "id": "8",
+            "name": "rgb 색상표 : 네이버 통합검색",
+            "type": "url",
+            "url": "https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=1&acr=2&acq=%E3%84%B1%ED%9C%B4&qdt=0&ie=utf8&query=rgb+%EC%83%89%EC%83%81%ED%91%9C"
+         }, {
+            "date_added": "13305867091582342",
+            "date_last_used": "13311911761558488",
+            "guid": "5bcc1d3a-3c5f-46ce-8dba-c3c02f0f8f2f",
+            "id": "12",
+            "name": "Summernote - Super Simple WYSIWYG editor",
+            "type": "url",
+            "url": "https://summernote.org/"
+         }, {
+            "date_added": "13306821230413314",
+            "date_last_used": "13312264158512784",
+            "guid": "29f63452-98ad-41d8-9ebb-c69379ed9058",
+            "id": "23",
+            "name": "Bootstrap Icons · Official open source SVG icon library for Bootstrap",
+            "type": "url",
+            "url": "https://icons.getbootstrap.com/"
+         }, {
+            "date_added": "13308104730431492",
+            "date_last_used": "13311911797114180",
+            "guid": "72fb8051-02eb-41da-a804-67968bd9e822",
+            "id": "34",
+            "name": "Font Awesome",
+            "type": "url",
+            "url": "https://fontawesome.com/"
+         }, {
+            "date_added": "13308048934205197",
+            "date_last_used": "13312020577552920",
+            "guid": "0e95aa58-6817-4e86-b686-58fca8182b0f",
+            "id": "32",
+            "name": "AWS Management Console",
+            "type": "url",
+            "url": "https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1"
+         }, {
+            "date_added": "13308893451882203",
+            "date_last_used": "13311911988802747",
+            "guid": "6ac5e6b8-6db2-4a64-be61-5a85046f1296",
+            "id": "37",
+            "name": "Free Vectors, Stock Photos & PSD Downloads | Freepik",
+            "type": "url",
+            "url": "https://www.freepik.com/"
+         }, {
+            "date_added": "13311142518654598",
+            "date_last_used": "13311911813458351",
+            "guid": "ef866dc8-0553-4093-a78c-512bccc7a512",
+            "id": "46",
+            "name": "PHP: Hypertext Preprocessor",
+            "type": "url",
+            "url": "https://www.php.net/index.php"
+         }, {
+            "date_added": "13308893576618903",
+            "date_last_used": "13312261854712516",
+            "guid": "41ea4c38-b34d-4c92-9e8e-87448b726fbd",
+            "id": "38",
+            "name": "이미지 배경 제거, 투명 배경 만들기 – remove.bg",
+            "type": "url",
+            "url": "https://www.remove.bg/ko"
+         }, {
+            "date_added": "13311147448668761",
+            "date_last_used": "13311911839358927",
+            "guid": "15f91d54-79a6-4248-84b4-65d84624a812",
+            "id": "47",
+            "name": "OMDb API - The Open Movie Database",
+            "type": "url",
+            "url": "https://www.omdbapi.com/"
+         }, {
+            "date_added": "13311155053383783",
+            "date_last_used": "13311911866706239",
+            "guid": "cb7527e9-9cac-4807-affd-b4495da55a18",
+            "id": "48",
+            "name": "Download jQuery | jQuery",
+            "type": "url",
+            "url": "https://jquery.com/download/"
+         }, {
+            "date_added": "13311409907127482",
+            "date_last_used": "13311911926980161",
+            "guid": "0fa115e7-8cd5-47da-9013-05b23551fce1",
+            "id": "55",
+            "name": "Early Access - Google Fonts",
+            "type": "url",
+            "url": "https://fonts.google.com/earlyaccess"
+         }, {
+            "date_added": "13311415912073741",
+            "date_last_used": "13311911902499929",
+            "guid": "8e602f80-7810-4592-8c72-62d278681cd6",
+            "id": "56",
+            "name": "Download Postman | Get Started for Free",
+            "type": "url",
+            "url": "https://www.postman.com/downloads/"
+         }, {
+            "date_added": "13311669262781716",
+            "date_last_used": "13312257113904420",
+            "guid": "796dfd9b-6f54-42da-a654-1bcb81e1ab70",
+            "id": "61",
+            "name": "Atlassian | Start page",
+            "type": "url",
+            "url": "https://start.atlassian.com/"
+         }, {
+            "date_added": "13311678278718520",
+            "date_last_used": "13312270845670249",
+            "guid": "b37b458c-914f-4122-968f-5b8adbf04923",
+            "id": "64",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Swiper Demos",
+            "type": "url",
+            "url": "https://swiperjs.com/demos#navigation"
+         }, {
+            "date_added": "13306548322237650",
+            "date_last_used": "13311848804946990",
+            "guid": "84d16e82-bc64-460c-8d8e-96eb269fae2d",
+            "id": "18",
+            "name": "국민취업지원제도",
+            "type": "url",
+            "url": "https://www.kua.go.kr/uaptm010/selectMain.do"
+         }, {
+            "date_added": "13311931874993053",
+            "date_last_used": "13312252809680617",
+            "guid": "5f1d2171-0892-4c26-a76f-7156fede034c",
+            "id": "68",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "CodeSandbox",
+            "type": "url",
+            "url": "https://codesandbox.io/search?refinementList%5Btemplate%5D=&refinementList%5Bnpm_dependencies.dependency%5D%5B0%5D=parcel-bundler&page=3&configure%5BhitsPerPage%5D=12"
+         }, {
+            "date_added": "13312446838888715",
+            "date_last_used": "13312627861614231",
+            "guid": "8e569278-610c-4a32-9eab-029c2e1aa5d2",
+            "id": "72",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Free download | Flag of the United States National flag, usa flag, flag, logo, united States png | PNGWing",
+            "type": "url",
+            "url": "https://www.pngwing.com/en/free-png-nulrn/download?width=100"
+         }, {
+            "date_added": "13313047246554035",
+            "date_last_used": "0",
+            "guid": "923f1dd7-0321-46af-b091-1c5e33fbe480",
+            "id": "74",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "W3Schools Online Web Tutorials",
+            "type": "url",
+            "url": "https://www.w3schools.com/"
+         }, {
+            "date_added": "13313057034529097",
+            "date_last_used": "13313144508910501",
+            "guid": "32b03047-2a7b-41dc-9521-4936c989c0fd",
+            "id": "75",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Spring Initializr",
+            "type": "url",
+            "url": "https://start.spring.io/"
+         } ],
+         "date_added": "13278569829130928",
+         "date_last_used": "0",
+         "date_modified": "13313057034529097",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "북마크바",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13311657556505261",
+            "date_last_used": "0",
+            "guid": "60730b03-594e-4fb6-bd08-b5f42618b4df",
+            "id": "58",
+            "name": "자기소개 페이지(3) JS적용",
+            "type": "url",
+            "url": "https://velog.io/@rhfovk/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C-%ED%8E%98%EC%9D%B4%EC%A7%803-JS%EC%A0%81%EC%9A%A9"
+         }, {
+            "date_added": "13311667162750747",
+            "date_last_used": "0",
+            "guid": "061b00f1-b200-48ca-ae8f-3c87c7b4a6cf",
+            "id": "60",
+            "name": "HTML, 프론트엔드를 위한 도움되는 사이트 모음. 포트폴리오, 프로젝트 팁",
+            "type": "url",
+            "url": "https://shuchong.tistory.com/entry/%EC%BD%94%EB%94%A9-HTML-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8C%81"
+         } ],
+         "date_added": "13278569829130930",
+         "date_last_used": "0",
+         "date_modified": "13311669262781716",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "기타 북마크",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13278569829130931",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "모바일 북마크",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
